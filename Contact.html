@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Usha Healthcare</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .container {
+        display: flex;
+        padding: 2rem;
+        gap: 2rem;
+      }
+      .contact-form,
+      .contact-info {
+        flex: 1;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #0a4d8c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .contact-form h2,
+      .contact-info h3 {
+        margin-bottom: 1rem;
+      }
+      .contact-info p {
+        margin: 6px 0;
+        line-height: 1.6;
+      }
+      .contact-info a {
+        color: red;
+        text-decoration: none;
+      }
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left: Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form>
+          <label>Your Name*</label>
+          <input type="text" name="name" required />
+
+          <label>E-Mail*</label>
+          <input type="email" name="email" required />
+
+          <label>Website</label>
+          <input type="text" name="website" />
+
+          <label>Your Message*</label>
+          <textarea name="message" rows="5" required></textarea>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <!-- Right: Info Section -->
+      <div class="contact-info">
+        <h3>Address Info</h3>
+        <p>
+          <strong>Usha Trade</strong><br />
+          93/3 Baba Colony, Block-A Burari, New Delhi, 110084
+        </p>
+        <p>
+          Phone: 981-054-5292, 991-008-3222<br />
+          851-007-3739, 011-553-38100
+        </p>
+        <p>
+          Email: <a href="mailto:info@ushatraders.com">info@ushatraders.com</a
+          ><br />
+          <a href="mailto:kushwahamanoj72@gmail.com"
+            >kushwahamanoj72@gmail.com</a
+          ><br />
+          <a href="mailto:ushatraders@gmail.com">ushatraders@gmail.com</a>
+        </p>
+        <p>
+          Website: <a href="http://www.ushatraders.com">www.ushatraders.com</a>
+        </p>
+
+        <h3>Find the Address</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.432907971487!2d77.15048225!3d28.7559279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQ1JzIxLjMiTiA3N8KwMDgnMjMuOCJF!5e0!3m2!1sen!2sin!4v1717836000000!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
+  </body>
+</html>
