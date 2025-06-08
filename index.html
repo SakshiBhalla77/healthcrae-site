@@ -392,7 +392,7 @@
     <!-- JavaScript for site functionality -->
     <script>
       // Product popup functionality
-      const viewButtons = document.querySelectorAll(".catalogue-card button");
+      const viewButtons = document.querySelectorAll(".catalogue-card button.view-details");
       const popupContainer = document.getElementById("popup-container");
       const closeButton = document.querySelector(".close-popup");
       const popupContent = document.getElementById("popup-content-inner");
@@ -624,88 +624,214 @@
           overflow: hidden;
         }
         
+        .button-container {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 0.5rem;
+        }
+        
+        .view-details {
+          flex: 1;
+        }
+        
+        .cart-button {
+          background-color: var(--navy-blue);
+          color: white;
+          border: none;
+          border-radius: 20px;
+          padding: 0.7rem;
+          width: 50px;
+          height: 50px;
+          font-size: 1.1rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          position: relative;
+        }
+        
+        .cart-button:hover {
+          background-color: var(--navy-blue-hover);
+          transform: scale(1.05);
+        }
+        
+        /* Tooltip styles */
+        .cart-button::after {
+          content: "Add to Cart";
+          position: absolute;
+          bottom: -35px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+          padding: 5px 10px;
+          border-radius: 4px;
+          font-size: 12px;
+          white-space: nowrap;
+          pointer-events: none;
+          opacity: 0;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+          z-index: 10;
+        }
+        
+        .cart-button:hover::after {
+          opacity: 1;
+          transform: translateX(-50%) translateY(-8px);
+        }
+        
         @media (max-width: 600px) {
           .popup-image-small {
             width: 150px;
             height: 150px;
             margin: 0 0 10px 10px;
           }
+          
+          .button-container {
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .view-details {
+            width: 100%;
+          }
         }
       `;
       document.head.appendChild(newStyle);
     
-      // Add click event to all buttons
-      viewButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-          // Get the product title from the parent card
-          const productTitle = this.parentElement.querySelector("h3").textContent.trim();
-          const product = productDetails[productTitle];
+      // Add click event to view details buttons
+      document.addEventListener("DOMContentLoaded", function () {
+        // First, ensure existing buttons have view-details class
+        const buttons = document.querySelectorAll('.catalogue-card button');
+        buttons.forEach(button => {
+          button.classList.add('view-details');
+        });
+        
+        // Then add button containers with both buttons
+        const catalogueCards = document.querySelectorAll('.catalogue-card');
+        catalogueCards.forEach(card => {
+          // Get the existing button
+          const viewButton = card.querySelector('button');
+          
+          // Create button container
+          const buttonContainer = document.createElement('div');
+          buttonContainer.className = 'button-container';
+          
+          // Create cart button
+          const cartButton = document.createElement('button');
+          cartButton.className = 'cart-button';
+          cartButton.innerHTML = '<i class="fas fa-cart-plus fa-lg"></i>';
+          cartButton.setAttribute('aria-label', 'Add to Cart');
+          
+          // Add cart functionality
+          cartButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const productName = card.querySelector('h3').textContent.trim();
+            
+            // Update cart count
+            const cartCountElement = document.querySelector('.cart-count');
+            const currentCount = parseInt(cartCountElement.textContent) || 0;
+            cartCountElement.textContent = currentCount + 1;
+            
+            // Give user feedback
+            cartButton.innerHTML = '<i class="fas fa-check fa-lg"></i>';
+            setTimeout(() => {
+              cartButton.innerHTML = '<i class="fas fa-cart-plus fa-lg"></i>';
+            }, 1500);
+            
+            // Alert user
+            alert(`Added ${productName} to cart`);
+          });
+          
+          // Move the original button to the container and add the new button
+          viewButton.parentNode.removeChild(viewButton);
+          buttonContainer.appendChild(viewButton);
+          buttonContainer.appendChild(cartButton);
+          
+          // Add the button container to the card
+          card.appendChild(buttonContainer);
+        });
+      });
     
-          if (product) {
-            // Build the popup content with small image in top right and text wrapping around
-            let content = `
-              <h2>${product.title}</h2>
-              <div class="popup-content-flex-new">
-                <div class="popup-image-small">
-                  <model-viewer
-                    src="${product.modelPath}"
-                    alt="${product.title} 3D Model"
-                    auto-rotate
-                    camera-controls
-                    camera-orbit="0deg 75deg 2m"
-                    background-color="#FFFFFF"
-                    style="width: 100%; height: 100%;"
-                  ></model-viewer>
+      // Setup view detail buttons
+      document.addEventListener("DOMContentLoaded", function() {
+        const viewButtons = document.querySelectorAll(".view-details");
+        
+        viewButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Get the product title from the parent card
+            const productTitle = this.closest('.catalogue-card').querySelector("h3").textContent.trim();
+            const product = productDetails[productTitle];
+      
+            if (product) {
+              // Build the popup content with small image in top right and text wrapping around
+              let content = `
+                <h2>${product.title}</h2>
+                <div class="popup-content-flex-new">
+                  <div class="popup-image-small">
+                    <model-viewer
+                      src="${product.modelPath}"
+                      alt="${product.title} 3D Model"
+                      auto-rotate
+                      camera-controls
+                      camera-orbit="0deg 75deg 2m"
+                      background-color="#FFFFFF"
+                      style="width: 100%; height: 100%;"
+                    ></model-viewer>
+                  </div>
+                  <div class="popup-details-full">
+                    <p class="popup-description">${product.description}</p>
+                    
+                    <h3>Specifications</h3>
+                    <ul class="specifications-list">
+                      ${product.specifications
+                        .map((spec) => `<li>${spec}</li>`)
+                        .join("")}
+                    </ul>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="features-list">
+                      ${product.features
+                        .map((feature) => `<li>${feature}</li>`)
+                        .join("")}
+                    </ul>
+                  </div>
                 </div>
-                <div class="popup-details-full">
-                  <p class="popup-description">${product.description}</p>
-                  
-                  <h3>Specifications</h3>
-                  <ul class="specifications-list">
-                    ${product.specifications
-                      .map((spec) => `<li>${spec}</li>`)
-                      .join("")}
-                  </ul>
-                  
-                  <h3>Key Features</h3>
-                  <ul class="features-list">
-                    ${product.features
-                      .map((feature) => `<li>${feature}</li>`)
-                      .join("")}
-                  </ul>
+                <div class="popup-footer">
+                  <button class="inquiry-button"><i class="fas fa-paper-plane"></i> Request Quote</button>
+                  <button class="download-specs"><i class="fas fa-download"></i> Download Specifications</button>
                 </div>
-              </div>
-              <div class="popup-footer">
-                <button class="inquiry-button"><i class="fas fa-paper-plane"></i> Request Quote</button>
-                <button class="download-specs"><i class="fas fa-download"></i> Download Specifications</button>
-              </div>
-            `;
-    
-            // Insert content and show popup
-            popupContent.innerHTML = content;
-            popupContainer.style.display = "flex";
-            document.body.style.overflow = "hidden"; // Prevent scrolling behind popup
-    
-            // Set up new buttons inside the popup
-            document
-              .querySelector(".inquiry-button")
-              .addEventListener("click", function () {
-                alert(
-                  "Thank you for your interest! Our team will contact you shortly."
-                );
-              });
-    
-            document
-              .querySelector(".download-specs")
-              .addEventListener("click", function () {
-                alert(
-                  "Specifications document is being prepared for download."
-                );
-              });
-          } else {
-            console.error("Product not found:", productTitle);
-            alert("Product details not available. Please try again.");
-          }
+              `;
+      
+              // Insert content and show popup
+              popupContent.innerHTML = content;
+              popupContainer.style.display = "flex";
+              document.body.style.overflow = "hidden"; // Prevent scrolling behind popup
+      
+              // Set up new buttons inside the popup
+              document
+                .querySelector(".inquiry-button")
+                .addEventListener("click", function () {
+                  alert(
+                    "Thank you for your interest! Our team will contact you shortly."
+                  );
+                });
+      
+              document
+                .querySelector(".download-specs")
+                .addEventListener("click", function () {
+                  alert(
+                    "Specifications document is being prepared for download."
+                  );
+                });
+            } else {
+              console.error("Product not found:", productTitle);
+              alert("Product details not available. Please try again.");
+            }
+          });
         });
       });
     
