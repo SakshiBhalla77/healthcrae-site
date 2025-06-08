@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usha Healthcare - Medical Equipment</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Styles/index.css" />
     <!-- Font Awesome for icons - Using the solid theme for consistency -->
     <link
       rel="stylesheet"
@@ -144,10 +145,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>Anesthesia Cart</h3>
-          <p>
-            Advanced anesthesia delivery unit with built-in monitoring
-            interface.
-          </p>
+          <p>Advanced anesthesia cart designed for mobility and storage in critical care.</p> <!-- Anesthesia Cart -->
           <button>View Details</button>
         </div>
 
@@ -167,10 +165,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>Anesthesia Machine</h3>
-          <p>
-            Advanced anesthesia delivery unit with built-in monitoring
-            interface.
-          </p>
+          <p>High-precision anesthesia machine with monitoring and ventilation support.</p> <!-- Anesthesia Machine -->
           <button>View Details</button>
         </div>
 
@@ -190,10 +185,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>LED OT Light</h3>
-          <p>
-            Advanced anesthesia delivery unit with built-in monitoring
-            interface.
-          </p>
+          <p>Shadow-free LED light for surgical precision and energy efficiency.</p> <!-- LED OT Light -->
           <button>View Details</button>
         </div>
 
@@ -213,10 +205,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>ICU Bed</h3>
-          <p>
-            Advanced anesthesia delivery unit with built-in monitoring
-            interface.
-          </p>
+          <p>Multi-position ICU bed designed for comfort, monitoring, and caregiver ease.</p> <!-- ICU Bed -->
           <button>View Details</button>
         </div>
 
@@ -236,10 +225,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>Steam Sterilizer</h3>
-          <p>
-            Horizontal High Pressure Cylindrical Steam Sterilizer for medical
-            instruments.
-          </p>
+          <p>Steam sterilizer for safe disinfection of medical and surgical instruments.</p> <!-- Steam Sterilizer -->
           <button>View Details</button>
         </div>
 
@@ -259,10 +245,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>Laproscopic Trolley</h3>
-          <p>
-            Advanced endoscopic equipment stand with adjustable height and
-            stable base.
-          </p>
+          <p>Mobile trolley for organizing and transporting laparoscopic tools efficiently.</p> <!-- Laproscopic Trolley -->
           <button>View Details</button>
         </div>
 
@@ -282,10 +265,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>Anesthesia vaporizer</h3>
-          <p>
-            Advanced endoscopic equipment stand with adjustable height and
-            stable base.
-          </p>
+          <p>Reliable vaporizer for controlled delivery of anesthetic gases.</p> <!-- Anesthesia Vaporizer -->
           <button>View Details</button>
         </div>
 
@@ -304,10 +284,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>Dialysis Bed (Electric)</h3>
-          <p>
-            Advanced endoscopic equipment stand with adjustable height and
-            stable base.
-          </p>
+          <p>Fully adjustable electric dialysis bed for patient comfort and accessibility.</p> <!-- Dialysis Bed (Electric) -->
           <button>View Details</button>
         </div>
 
@@ -327,10 +304,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3>CMS8000 Patient Monitor</h3>
-          <p>
-            Advanced endoscopic equipment stand with adjustable height and
-            stable base.
-          </p>
+          <p>Multi-parameter monitor for real-time tracking of patient vitals.</p> <!-- CMS8000 Patient Monitor -->
           <button>View Details</button>
         </div>
 
@@ -350,10 +324,7 @@
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
           <h3> Anaesthesia-Ventilator</h3>
-          <p>
-            Advanced endoscopic equipment stand with adjustable height and
-            stable base.
-          </p>
+          <p>Integrated anesthesia ventilator ensuring consistent and safe respiration.</p> <!-- Anesthesia Ventilator -->
           <button>View Details</button>
         </div>
 
@@ -425,7 +396,7 @@
       const popupContainer = document.getElementById("popup-container");
       const closeButton = document.querySelector(".close-popup");
       const popupContent = document.getElementById("popup-content-inner");
-
+    
       // Product details data with correct file paths
       const productDetails = {
         "Anesthesia Cart": {
@@ -588,61 +559,133 @@
           ],
           modelPath: "images/Dialysis_bed.glb",
         },
+        "CMS8000 Patient Monitor": {
+          title: "CMS8000 Patient Monitor",
+          description:
+            "Advanced multi-parameter patient monitoring system with high-resolution display and comprehensive vital signs tracking. Ideal for critical care and perioperative monitoring.",
+          specifications: [
+            "Display: 15-inch high-resolution color LCD",
+            "Parameters: ECG, SpO2, NIBP, Respiration, Temperature, IBP",
+            "Battery life: Up to 4 hours on full charge",
+            "Memory: 72-hour trend data storage",
+            "Connectivity: LAN, Wi-Fi, HL7 compatible",
+          ],
+          features: [
+            "Multi-lead ECG monitoring with arrhythmia detection",
+            "Advanced alarm management system",
+            "Drug dose calculation feature",
+            "Customizable screen layouts",
+            "Integrated printer for instant reports",
+          ],
+          modelPath: "images/Patient_monitor.glb",
+        },
+        "Anaesthesia-Ventilator": {
+          title: "Anaesthesia-Ventilator",
+          description:
+            "High-performance anesthesia ventilator providing reliable respiratory support during surgical procedures. Designed with precision controls and extensive monitoring capabilities.",
+          specifications: [
+            "Ventilation modes: Volume control, pressure control, PSV, SIMV",
+            "Tidal volume range: 20mL to 1500mL",
+            "Respiratory rate: 4 to 100 breaths/min",
+            "PEEP range: 0 to 30 cmH2O",
+            "Flow trigger sensitivity: 0.5 to 15 L/min",
+          ],
+          features: [
+            "Real-time waveform displays",
+            "Dynamic compliance compensation",
+            "Integrated spirometry",
+            "Apnea backup ventilation",
+            "Low-flow anesthesia capability",
+          ],
+          modelPath: "images/anesthesia_ventilator.glb",
+        },
       };
-
+    
+      // Add this CSS to your head or in your CSS file
+      const newStyle = document.createElement('style');
+      newStyle.textContent = `
+        /* New popup layout styles */
+        .popup-content-flex-new {
+          position: relative;
+          margin-bottom: 25px;
+        }
+        
+        .popup-image-small {
+          float: right;
+          width: 200px;
+          height: 200px;
+          margin: 0 0 15px 15px;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: var(--card-shadow);
+        }
+        
+        .popup-details-full {
+          overflow: hidden;
+        }
+        
+        @media (max-width: 600px) {
+          .popup-image-small {
+            width: 150px;
+            height: 150px;
+            margin: 0 0 10px 10px;
+          }
+        }
+      `;
+      document.head.appendChild(newStyle);
+    
       // Add click event to all buttons
       viewButtons.forEach((button) => {
         button.addEventListener("click", function () {
           // Get the product title from the parent card
-          const productTitle =
-            this.parentElement.querySelector("h3").textContent;
+          const productTitle = this.parentElement.querySelector("h3").textContent.trim();
           const product = productDetails[productTitle];
-
+    
           if (product) {
-            // Build the popup content
+            // Build the popup content with small image in top right and text wrapping around
             let content = `
-        <h2>${product.title}</h2>
-        <div class="popup-content-flex">
-          <div class="popup-image">
-            <model-viewer
-              src="${product.modelPath}"
-              alt="${product.title} 3D Model"
-              auto-rotate
-              camera-controls
-              camera-orbit="0deg 75deg 2m"
-              background-color="#FFFFFF"
-              style="width: 100%; height: 250px;"
-            ></model-viewer>
-          </div>
-          <div class="popup-details">
-            <p class="popup-description">${product.description}</p>
-            
-            <h3>Specifications</h3>
-            <ul class="specifications-list">
-              ${product.specifications
-                .map((spec) => `<li>${spec}</li>`)
-                .join("")}
-            </ul>
-            
-            <h3>Key Features</h3>
-            <ul class="features-list">
-              ${product.features
-                .map((feature) => `<li>${feature}</li>`)
-                .join("")}
-            </ul>
-          </div>
-        </div>
-        <div class="popup-footer">
-          <button class="inquiry-button"><i class="fas fa-paper-plane"></i> Request Quote</button>
-          <button class="download-specs"><i class="fas fa-download"></i> Download Specifications</button>
-        </div>
-      `;
-
+              <h2>${product.title}</h2>
+              <div class="popup-content-flex-new">
+                <div class="popup-image-small">
+                  <model-viewer
+                    src="${product.modelPath}"
+                    alt="${product.title} 3D Model"
+                    auto-rotate
+                    camera-controls
+                    camera-orbit="0deg 75deg 2m"
+                    background-color="#FFFFFF"
+                    style="width: 100%; height: 100%;"
+                  ></model-viewer>
+                </div>
+                <div class="popup-details-full">
+                  <p class="popup-description">${product.description}</p>
+                  
+                  <h3>Specifications</h3>
+                  <ul class="specifications-list">
+                    ${product.specifications
+                      .map((spec) => `<li>${spec}</li>`)
+                      .join("")}
+                  </ul>
+                  
+                  <h3>Key Features</h3>
+                  <ul class="features-list">
+                    ${product.features
+                      .map((feature) => `<li>${feature}</li>`)
+                      .join("")}
+                  </ul>
+                </div>
+              </div>
+              <div class="popup-footer">
+                <button class="inquiry-button"><i class="fas fa-paper-plane"></i> Request Quote</button>
+                <button class="download-specs"><i class="fas fa-download"></i> Download Specifications</button>
+              </div>
+            `;
+    
             // Insert content and show popup
             popupContent.innerHTML = content;
             popupContainer.style.display = "flex";
             document.body.style.overflow = "hidden"; // Prevent scrolling behind popup
-
+    
             // Set up new buttons inside the popup
             document
               .querySelector(".inquiry-button")
@@ -651,7 +694,7 @@
                   "Thank you for your interest! Our team will contact you shortly."
                 );
               });
-
+    
             document
               .querySelector(".download-specs")
               .addEventListener("click", function () {
@@ -659,16 +702,19 @@
                   "Specifications document is being prepared for download."
                 );
               });
+          } else {
+            console.error("Product not found:", productTitle);
+            alert("Product details not available. Please try again.");
           }
         });
       });
-
+    
       // Close popup when clicking the X
       closeButton.addEventListener("click", function () {
         popupContainer.style.display = "none";
         document.body.style.overflow = ""; // Re-enable scrolling
       });
-
+    
       // Close popup when clicking outside the content
       window.addEventListener("click", function (event) {
         if (event.target === popupContainer) {
@@ -676,34 +722,34 @@
           document.body.style.overflow = ""; // Re-enable scrolling
         }
       });
-
+    
       // Dark mode toggle functionality
       document.addEventListener("DOMContentLoaded", function () {
         // Theme toggle functionality
         const themeToggle = document.querySelector(".theme-toggle");
         const htmlElement = document.documentElement;
-
+    
         // Check for saved theme preference or respect OS preference
         const savedTheme =
           localStorage.getItem("theme") ||
           (window.matchMedia("(prefers-color-scheme: dark)").matches
             ? "dark"
             : "light");
-
+    
         // Apply the saved theme
         htmlElement.setAttribute("data-theme", savedTheme);
         updateThemeIcon(savedTheme);
-
+    
         themeToggle.addEventListener("click", function () {
           const currentTheme = htmlElement.getAttribute("data-theme");
           const newTheme = currentTheme === "light" ? "dark" : "light";
-
+    
           htmlElement.setAttribute("data-theme", newTheme);
           localStorage.setItem("theme", newTheme);
-
+    
           updateThemeIcon(newTheme);
         });
-
+    
         function updateThemeIcon(theme) {
           const icon = themeToggle.querySelector("i");
           if (theme === "dark") {
@@ -712,15 +758,15 @@
             icon.className = "fas fa-moon";
           }
         }
-
+    
         // Mobile Navigation Menu Toggle
         const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
         const mobileNav = document.querySelector(".mobile-nav");
-
+    
         mobileMenuToggle.addEventListener("click", function () {
           mobileNav.classList.toggle("active");
         });
-
+    
         // Close mobile menu when clicking anywhere else
         document.addEventListener("click", function (event) {
           if (
@@ -731,21 +777,21 @@
             mobileNav.classList.remove("active");
           }
         });
-
+    
         // Search functionality
         const searchInput = document.querySelector(".search-container input");
         const searchButton = document.querySelector(".search-container button");
-
+    
         searchButton.addEventListener("click", function () {
           performSearch();
         });
-
+    
         searchInput.addEventListener("keypress", function (e) {
           if (e.key === "Enter") {
             performSearch();
           }
         });
-
+    
         function performSearch() {
           const searchTerm = searchInput.value.trim().toLowerCase();
           if (searchTerm) {
@@ -753,7 +799,7 @@
             // Here you would typically implement actual search functionality
           }
         }
-
+    
         // Cart functionality
         const cartIcon =
           document.querySelector(".fa-shopping-cart").parentElement;
