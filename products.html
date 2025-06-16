@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
@@ -21,8 +22,6 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
   </head>
-
-  
   <body>
     <!-- Header -->
     <header class="header">
@@ -39,11 +38,10 @@
           <a href="#" class="active">Home</a>
           <!-- Replace your current "Products" link inside .main-nav with this -->
           <div class="dropdown">
-            <a href="products.html" class="dropbtn">
+            <a href="#" class="dropbtn">
               <span class="dropdown-text">Products</span>
               <i class="fas fa-caret-down dropdown-icon"></i>
             </a>
-            
             
             <div class="dropdown-content">
               <a href="#">Anaesthesia Work Station</a>
@@ -115,32 +113,264 @@
       </div>
     </header>
 
-    <div class="hero-section">
-      <!-- Carousel Hero Section -->
-      <section class="hero-carousel">
-        <div class="carousel">
-          <div class="slides">
-            <img src="images/icu.jpg" alt="Banner 1" />
-            <img src="images/ambulance.jpg" alt="Banner 2" />
-            <img src="images/monitor.jpg" alt="Banner 3" />
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-          <div class="indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-          </div>
-        </div>
-      </section>
+    <!-- Mobile Navigation Menu (hidden by default, shows on small screens) -->
+    <div class="mobile-nav">
+      <a href="#"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-box"></i> Products</a>
+      <a href="#"><i class="fas fa-file-download"></i> Catalog</a>
+      <a href="#"><i class="fas fa-envelope"></i> Contact</a>
     </div>
 
-    <!-- White Content Section -->
-    <section class="white-section">
-      <h2>Welcome to Usha Healthcare</h2>
+    <!-- Catalogue Section -->
+    <section class="catalogue">
+      <h2>Featured Products</h2>
+      <p class="section-subtitle">
+        Explore our wide range of medical equipment and hospital solutions.
+      </p>
+
+      <div class="catalogue-grid">
+        <!-- Product 1: Anesthesia Cart (3D) -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/anesthesia-cart.glb"
+            alt="Anesthesia Cart 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="180deg 85deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Anesthesia Cart</h3>
+          <p>Advanced anesthesia cart designed for mobility and storage in critical care.</p> <!-- Anesthesia Cart -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 2: Anesthesia Machine -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/anesthesia-machine.glb"
+            alt="Anesthesia Machine 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 85deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Anesthesia Machine</h3>
+          <p>High-precision anesthesia machine with monitoring and ventilation support.</p> <!-- Anesthesia Machine -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 3: Operation Theatre Light -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/OT light.glb"
+            alt="Operation Theatre Light 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 85deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>LED OT Light</h3>
+          <p>Shadow-free LED light for surgical precision and energy efficiency.</p> <!-- LED OT Light -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 4: ICU Bed -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/icubed.glb"
+            alt="ICU Bed 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="180deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>ICU Bed</h3>
+          <p>Multi-position ICU bed designed for comfort, monitoring, and caregiver ease.</p> <!-- ICU Bed -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 5: Steam Sterilizer -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Steam Sterilizer.glb"
+            alt="Steam Sterilizer 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="80deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Steam Sterilizer</h3>
+          <p>Steam sterilizer for safe disinfection of medical and surgical instruments.</p> <!-- Steam Sterilizer -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 6: Endoscopic stand -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Endoscopic_stand.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Laproscopic Trolley</h3>
+          <p>Mobile trolley for organizing and transporting laparoscopic tools efficiently.</p> <!-- Laproscopic Trolley -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 7: anesthesia vaporizer -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Anesthesia_vaporiser.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Anesthesia vaporizer</h3>
+          <p>Reliable vaporizer for controlled delivery of anesthetic gases.</p> <!-- Anesthesia Vaporizer -->
+          <button>View Details</button>
+        </div>
+
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Dialysis_bed.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="360deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Dialysis Bed (Electric)</h3>
+          <p>Fully adjustable electric dialysis bed for patient comfort and accessibility.</p> <!-- Dialysis Bed (Electric) -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 9: monitor-->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Patient_monitor.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>CMS8000 Patient Monitor</h3>
+          <p>Multi-parameter monitor for real-time tracking of patient vitals.</p> <!-- CMS8000 Patient Monitor -->
+          <button>View Details</button>
+        </div>
+
+         <!-- Product 10: ANAESTHESIA-VENTILATOR-->
+         <div class="catalogue-card">
+          <model-viewer
+            src="images/anesthesia_ventilator.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3> Anaesthesia-Ventilator</h3>
+          <p>Integrated anesthesia ventilator ensuring consistent and safe respiration.</p> <!-- Anesthesia Ventilator -->
+          <button>View Details</button>
+        </div>
+
+
+        <!-- Add more products as needed to complete rows of 4 -->
+      </div>
+    </section>
+
+    <!-- Products Section
+    <section class="products">
+      <h2>Featured Products</h2>
+      <p class="section-subtitle">
+        Our most popular medical equipment solutions.
+      </p>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/product1.jpg" alt="Patient Monitor" />
+          <h3>Patient Monitor</h3>
+        </div>
+        <div class="product-card">
+          <img src="images/product2.jpg" alt="Anesthesia Machine" />
+          <h3>Anesthesia Machine</h3>
+        </div>
+        <div class="product-card">
+          <img src="images/product3.jpg" alt="Oxygen Flowmeter" />
+          <h3>Oxygen Flowmeter</h3>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- About Us Section -->
+    <section class="about-us">
+      <h2>About Usha Healthcare</h2>
+      <p class="section-subtitle">
+        Since March - 2005, Usha Healthcare is manufacturing & Trading
+        Anaesthesia machine delivery systems with highest level of patient
+        safety & high status for dependability of both product & service.
+      </p>
       <p>
-        We specialize in providing reliable medical equipment solutions across
-        India, combining innovation with precision.
+        Usha Healthcare believe that the class of patient care must never be
+        compromised by the integrity of Anaesthesia machine delivery system at
+        any cost. Usha Healthcare designs, develops, manufactures and markets a
+        wide range of medical equipments for NURSING HOMES & hospital use.
+        People across the country put their trust in our innovative,
+        high-quality solutions to offer superior protection, combined with high
+        levels of performance.
       </p>
     </section>
 
@@ -517,14 +747,12 @@
           });
           
           // Move the original button to the container and add the new button
-          if (viewButton) {
-            viewButton.parentNode.removeChild(viewButton);
-            buttonContainer.appendChild(viewButton);
-            buttonContainer.appendChild(cartButton);
-            
-            // Add the button container to the card
-            card.appendChild(buttonContainer);
-          }
+          viewButton.parentNode.removeChild(viewButton);
+          buttonContainer.appendChild(viewButton);
+          buttonContainer.appendChild(cartButton);
+          
+          // Add the button container to the card
+          card.appendChild(buttonContainer);
         });
       });
     
@@ -661,107 +889,51 @@
         const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
         const mobileNav = document.querySelector(".mobile-nav");
     
-        if (mobileMenuToggle && mobileNav) {
-          mobileMenuToggle.addEventListener("click", function () {
-            mobileNav.classList.toggle("active");
-          });
-      
-          // Close mobile menu when clicking anywhere else
-          document.addEventListener("click", function (event) {
-            if (
-              !event.target.closest(".mobile-menu-toggle") &&
-              !event.target.closest(".mobile-nav") &&
-              mobileNav.classList.contains("active")
-            ) {
-              mobileNav.classList.remove("active");
-            }
-          });
-        }
+        mobileMenuToggle.addEventListener("click", function () {
+          mobileNav.classList.toggle("active");
+        });
+    
+        // Close mobile menu when clicking anywhere else
+        document.addEventListener("click", function (event) {
+          if (
+            !event.target.closest(".mobile-menu-toggle") &&
+            !event.target.closest(".mobile-nav") &&
+            mobileNav.classList.contains("active")
+          ) {
+            mobileNav.classList.remove("active");
+          }
+        });
     
         // Search functionality
         const searchInput = document.querySelector(".search-container input");
         const searchButton = document.querySelector(".search-container button");
     
-        if (searchInput && searchButton) {
-          searchButton.addEventListener("click", function () {
+        searchButton.addEventListener("click", function () {
+          performSearch();
+        });
+    
+        searchInput.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
             performSearch();
-          });
-      
-          searchInput.addEventListener("keypress", function (e) {
-            if (e.key === "Enter") {
-              performSearch();
-            }
-          });
-      
-          function performSearch() {
-            const searchTerm = searchInput.value.trim().toLowerCase();
-            if (searchTerm) {
-              alert(`Searching for: ${searchTerm}`);
-              // Here you would typically implement actual search functionality
-            }
+          }
+        });
+    
+        function performSearch() {
+          const searchTerm = searchInput.value.trim().toLowerCase();
+          if (searchTerm) {
+            alert(`Searching for: ${searchTerm}`);
+            // Here you would typically implement actual search functionality
           }
         }
     
         // Cart functionality
-        const cartIcon = document.querySelector(".fa-shopping-cart")?.parentElement;
-        if (cartIcon) {
-          cartIcon.addEventListener("click", function () {
-            alert(
-              "Your cart is currently empty. Browse our products to add items."
-            );
-          });
-        }
-      });
-    </script>
-
-    <!-- Carousel JavaScript -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelector(".slides");
-        const images = document.querySelectorAll(".slides img");
-        const next = document.querySelector(".next");
-        const prev = document.querySelector(".prev");
-        const indicators = document.querySelectorAll(".indicator");
-
-        let index = 0;
-        const slideWidth = 100; // 100% of container width
-
-        function updateSlide() {
-          slides.style.transform = `translateX(-${index * slideWidth}%)`;
-          
-          // Update indicators
-          document.querySelectorAll(".indicator").forEach((ind, i) => {
-            if (i === index) {
-              ind.classList.add("active");
-            } else {
-              ind.classList.remove("active");
-            }
-          });
-        }
-
-        next.addEventListener("click", () => {
-          index = (index + 1) % images.length;
-          updateSlide();
+        const cartIcon =
+          document.querySelector(".fa-shopping-cart").parentElement;
+        cartIcon.addEventListener("click", function () {
+          alert(
+            "Your cart is currently empty. Browse our products to add items."
+          );
         });
-
-        prev.addEventListener("click", () => {
-          index = (index - 1 + images.length) % images.length;
-          updateSlide();
-        });
-        
-        // Allow clicking on indicators to navigate
-        indicators.forEach((indicator, i) => {
-          indicator.addEventListener("click", () => {
-            index = i;
-            updateSlide();
-          });
-        });
-
-        // Auto-advance slides every 5 seconds
-        setInterval(() => {
-          index = (index + 1) % images.length;
-          updateSlide();
-        }, 10000);
       });
     </script>
   </body>

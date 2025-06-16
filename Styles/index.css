@@ -13,52 +13,6 @@
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   --border-color: #e6e6e6;
 }
-/* Dropdown for Products */
-.dropdown {
-  position: relative;
-}
-
-.dropbtn {
-  display: inline-block;
-  color: var(--text-primary);
-  padding: 8px 16px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(52, 94, 160, 0.85); /* transparent blue tint */
-  min-width: 220px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  border-radius: 8px;
-  overflow: hidden;
-  top: 100%;
-  backdrop-filter: blur(6px); /* optional: soft glassy blur effect */
-}
-.dropdown-icon {
-  margin-left: 6px; /* adjust the gap as you like */
-  font-size: 0.85rem; /* optional: to make the arrow smaller */
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-weight: 500;
-}
-
-.dropdown-content a:hover {
-  background-color: rgba(52, 94, 160, 1); /* solid on hover */
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 [data-theme="dark"] {
   /* Dark theme variables - simplified color palette */
@@ -116,8 +70,6 @@ p {
 }
 
 /* Header Styles - Navy Blue */
-/* Header Styles - Navy Blue */
-/* Header Styles - Navy Blue */
 .header {
   display: grid;
   grid-template-columns: 1.5fr 3fr 1.5fr;
@@ -125,12 +77,13 @@ p {
   padding: 0.2rem 1.5rem;
   background-color: var(--navy-blue);
   color: white;
-  position: sticky; /* Change from relative to sticky */
-  top: 0; /* Add this to make it stick to the top */
+  position: sticky;
+  top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px var(--shadow);
-  width: 100%; /* Ensure it spans the full width */
+  width: 100%;
 }
+
 /* Header Left - Logo and Navigation */
 .header-left {
   display: flex;
@@ -140,8 +93,8 @@ p {
 
 .logo-img {
   height: 150px;
-  margin-top: -30px; /* pull it upwards */
-  margin-bottom: -30px; /* optional: overlap bottom too */
+  margin-top: -30px;
+  margin-bottom: -30px;
 }
 
 /* Main Navigation */
@@ -174,6 +127,54 @@ p {
   color: white;
   font-weight: 700;
   border-bottom: 2px solid white;
+}
+
+/* Dropdown for Products */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.dropdown-icon {
+  margin-left: 6px;
+  font-size: 0.85rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(52, 94, 160, 0.85);
+  min-width: 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 8px;
+  overflow: hidden;
+  top: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(52, 94, 160, 1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Header Center - Search */
@@ -380,80 +381,106 @@ p {
   display: flex;
 }
 
-/* Responsive adjustments for header */
-@media (max-width: 992px) {
-  .header-left,
-  .header-center,
-  .header-right {
-    flex: 1;
-  }
-
-  .main-nav a {
-    padding: 8px 10px;
-  }
-
-  .main-nav a i {
-    margin-right: 3px;
-  }
+/* Hero Carousel Section - FIXED */
+.hero-carousel {
+  background: linear-gradient(to bottom, #f4f8fb, #dbe9f7);
+  width: 100vw;
+  height: calc(100vh - 90px); /* subtracting header height (~90px) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* remove any top/bottom padding */
+}
+.carousel {
+  width: 80%; /* reduced from 90% */
+  max-width: 1000px; /* optional: smaller max width */
+  height: 65vh; /* reduced from 80vh */
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: var(
+    --bg-tertiary
+  ); /* optional for consistent white background */
 }
 
-@media (max-width: 768px) {
-  .header {
-    padding: 10px;
-    flex-wrap: wrap;
-  }
-
-  .header-left {
-    order: 1;
-    flex-basis: 100%;
-    justify-content: space-between;
-  }
-
-  .main-nav {
-    display: none;
-  }
-
-  .logo-img {
-    height: 50px;
-    margin-right: 0;
-  }
-
-  .header-center {
-    order: 3;
-    flex-basis: 100%;
-    margin-top: 10px;
-  }
-
-  .header-right {
-    order: 2;
-    justify-content: flex-end;
-  }
-
-  .mobile-menu-toggle {
-    display: block;
-  }
-
-  .header-icon {
-    padding: 0 5px;
-  }
-
-  .icon-label {
-    display: none;
-  }
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
 }
 
-/* Hero Section */
-.hero {
-  background: var(--navy-blue);
-  color: white;
-  padding: 4rem 2rem;
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  flex: 0 0 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+/* Carousel Indicators */
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+.white-section {
+  background-color: white;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  color: white;
+  padding: 3rem 2rem;
 }
 
 /* Catalogue Section */
@@ -475,14 +502,13 @@ p {
   margin-bottom: 2rem;
 }
 
-/* Update to your catalogue-grid for rows of 4 */
 .catalogue-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
-  width: 100%; /* remove max-width */
-  margin: 0; /* remove centering */
-  padding: 0 1rem; /* optional, reduce or remove this too */
+  width: 100%;
+  margin: 0;
+  padding: 0 1rem;
 }
 
 .catalogue-card {
@@ -494,25 +520,6 @@ p {
   transition: transform 0.4s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
   perspective: 1000px;
-}
-
-/* Responsive adjustments for the grid */
-@media (max-width: 1200px) {
-  .catalogue-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .catalogue-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .catalogue-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .catalogue-card * {
@@ -564,6 +571,64 @@ p {
 .catalogue-card button:hover {
   background-color: var(--navy-blue-hover);
   transform: scale(1.05);
+}
+
+/* Button Container Styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.view-details {
+  flex: 1;
+}
+
+.cart-button {
+  background-color: var(--navy-blue);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.7rem;
+  width: 50px;
+  height: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.cart-button:hover {
+  background-color: var(--navy-blue-hover);
+  transform: scale(1.05);
+}
+
+/* Tooltip styles */
+.cart-button::after {
+  content: "Add to Cart";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.cart-button:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-8px);
 }
 
 /* Products Section */
@@ -808,13 +873,127 @@ p {
   transform: translateY(-2px);
 }
 
+/* New popup layout styles */
+.popup-content-flex-new {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.popup-image-small {
+  float: right;
+  width: 200px;
+  height: 200px;
+  margin: 0 0 15px 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.popup-details-full {
+  overflow: hidden;
+}
+
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .catalogue-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .header-left,
+  .header-center,
+  .header-right {
+    flex: 1;
+  }
+
+  .main-nav a {
+    padding: 8px 10px;
+  }
+
+  .main-nav a i {
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 900px) {
+  .catalogue-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  .header {
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header-left {
+    order: 1;
+    justify-content: space-between;
+    grid-column: 1 / span 1;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .logo-img {
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .header-center {
+    order: 3;
+    grid-column: 1 / span 2;
+    margin-top: 10px;
+  }
+
+  .header-right {
+    order: 2;
+    justify-content: flex-end;
+    grid-column: 2 / span 1;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .header-icon {
+    padding: 0 5px;
+  }
+
+  .icon-label {
+    display: none;
+  }
+
   .popup-content-flex {
     flex-direction: column;
   }
 
   .popup-content {
     padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalogue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-image-small {
+    width: 150px;
+    height: 150px;
+    margin: 0 0 10px 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .view-details {
+    width: 100%;
   }
 }
