@@ -997,3 +997,33 @@ p {
     width: 100%;
   }
 }
+/* Hidden by default */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--navy-blue);
+  padding: 10px;
+  position: absolute;
+  top: 70px; /* below header */
+  right: 10px;
+  width: 200px;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Show when toggled */
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
