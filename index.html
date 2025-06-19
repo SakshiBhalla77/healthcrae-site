@@ -35,6 +35,7 @@
           alt="Usha Healthcare Logo"
           class="logo-img"
         />
+        
 
         <!-- Main Navigation -->
         <nav class="main-nav">
@@ -126,34 +127,45 @@
     </div>
     </header>
 
-    <div class="hero-section">
-      <!-- Carousel Hero Section -->
-      <section class="hero-carousel">
-        <div class="carousel">
-          <div class="slides">
-            <img src="images/icu.jpg" alt="Banner 1" />
-            <img src="images/ambulance.jpg" alt="Banner 2" />
-            <img src="images/monitor.jpg" alt="Banner 3" />
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-          <div class="indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-          </div>
-        </div>
-      </section>
-    </div>
+     <!-- Hero Welcome Section -->
+<section class="hero-welcome">
+  <h1>Welcome to Usha Traders</h1>
+  <p>
+    Since March 2005, Usha Traders has been a trusted name in the manufacturing and trading of anaesthesia machine delivery systems. We are committed to delivering the highest level of patient safety and have built a strong reputation for dependable products and services.
+  </p>
+  <p>
+    At Usha Traders, we believe that the standard of patient care must never be compromised by the reliability of medical equipment. That’s why we design, develop, and market a wide range of high-quality medical devices for nursing homes and hospitals across the country.
+  </p>
+  <p>
+    People across India trust our innovative solutions for superior protection and consistent performance in critical healthcare environments.
+  </p>
+</section>
 
-    <!-- White Content Section -->
-    <section class="white-section">
-      <h2>Welcome to Usha Healthcare</h2>
-      <p>
-        We specialize in providing reliable medical equipment solutions across
-        India, combining innovation with precision.
-      </p>
+
+    
+
+
+ 
+
+    
+
+        <div style="overflow: hidden; line-height: 0;">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="display: block; width: 100%; height: 80px;">
+            <path d="M0,0 C150,100 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill: #ffffff;"></path>
+          </svg>
+        </div>
+        
+
+
+    <section id="recent-products">
+      <h2>Recent Products</h2>
+      <div class="product-container" id="recent-products-list"></div>
     </section>
+
+
+    
+
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -725,58 +737,56 @@
       });
     </script>
 
-    <!-- Carousel JavaScript -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelector(".slides");
-        const images = document.querySelectorAll(".slides img");
-        const next = document.querySelector(".next");
-        const prev = document.querySelector(".prev");
-        const indicators = document.querySelectorAll(".indicator");
 
-        let index = 0;
-        const slideWidth = 100; // 100% of container width
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop().toLowerCase();
 
-        function updateSlide() {
-          slides.style.transform = `translateX(-${index * slideWidth}%)`;
-          
-          // Update indicators
-          document.querySelectorAll(".indicator").forEach((ind, i) => {
-            if (i === index) {
-              ind.classList.add("active");
-            } else {
-              ind.classList.remove("active");
-            }
-          });
+    // Desktop Nav
+    document.querySelectorAll(".main-nav a").forEach(link => {
+      const href = link.getAttribute("href")?.toLowerCase();
+      if (href && currentPath === href) {
+        link.classList.add("active");
+
+        // If it's inside a dropdown, also highlight the parent
+        const dropdown = link.closest(".dropdown");
+        if (dropdown) {
+          dropdown.querySelector(".dropbtn")?.classList.add("active");
         }
+      }
+    });
 
-        next.addEventListener("click", () => {
-          index = (index + 1) % images.length;
-          updateSlide();
-        });
+    // Mobile Nav
+    document.querySelectorAll(".mobile-nav a").forEach(link => {
+      const href = link.getAttribute("href")?.toLowerCase();
+      if (href && currentPath === href) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 
-        prev.addEventListener("click", () => {
-          index = (index - 1 + images.length) % images.length;
-          updateSlide();
-        });
-        
-        // Allow clicking on indicators to navigate
-        indicators.forEach((indicator, i) => {
-          indicator.addEventListener("click", () => {
-            index = i;
-            updateSlide();
-          });
-        });
 
-        // Auto-advance slides every 5 seconds
-        setInterval(() => {
-          index = (index + 1) % images.length;
-          updateSlide();
-        }, 10000);
+
+
+<script>
+  fetch('recent-products.json')
+    .then(res => res.json())
+    .then(products => {
+      const container = document.getElementById('recent-products-list');
+      products.forEach(p => {
+        container.innerHTML += `
+          <div class="product-card">
+            <img src="${p.image}" alt="${p.name}" />
+            <h3>${p.name}</h3>
+            <p>${p.description}</p>
+            <strong>${p.price}</strong>
+          </div>
+        `;
       });
-    </script>
-
-    
+    });
+  </script>
+  
 
 
   </body>

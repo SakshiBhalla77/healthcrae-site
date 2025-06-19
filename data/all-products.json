@@ -1,0 +1,776 @@
+[
+  {
+    "title": "Medical Oxygen Manifold System (Fully-automatic)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/Medical_Oxygen_Manifold_System.jpg"
+  },
+  {
+    "title": "Medical Oxygen Manifold System (Semi-automatic)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/medical_xyz.jpg"
+  },
+  {
+    "title": "Oxygen Control Panel",
+    "description": "",
+    "displayType": "image",
+    "image": "images/Oxygen_Control_Panel.jpg"
+  },
+  {
+    "title": "Manifold NRV",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ManifoldNRV.jpg"
+  },
+  {
+    "title": "SS Flexible Tail Pipe",
+    "description": "",
+    "displayType": "image",
+    "image": "images/SS_Flexible_Tail_Pipe.jpg"
+  },
+  {
+    "title": "IOX Regulator Kit",
+    "description": "",
+    "displayType": "image",
+    "image": "images/iox_regulator_kit.jpg"
+  },
+  {
+    "title": "Oxygen Outlet Point",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_outlet_point.jpg"
+  },
+  {
+    "title": "Vacuum Outlet Point",
+    "description": "",
+    "displayType": "image",
+    "image": "images/vacuum_outlet_point.jpg"
+  },
+  {
+    "title": "CO2 Outlet Point",
+    "description": "",
+    "displayType": "image",
+    "image": "images/co2_outlet_point.jpg"
+  },
+  {
+    "title": "N2O Outlet Point",
+    "description": "",
+    "displayType": "image",
+    "image": "images/n2o_outlet_point.jpg"
+  },
+  {
+    "title": "Air Outlet Point",
+    "description": "",
+    "displayType": "image",
+    "image": "images/air_outlet_point.jpg"
+  },
+  {
+    "title": "Oxygen Point Nose Block",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_point_nose_block.jpg"
+  },
+  {
+    "title": "Ward Vacuum Unit",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ward_vacuum_unit.jpg"
+  },
+  {
+    "title": "12mm Copper Pipe",
+    "description": "",
+    "displayType": "image",
+    "image": "images/12mm_copper_pipe.jpg"
+  },
+  {
+    "title": "15mm Copper Pipe",
+    "description": "",
+    "displayType": "image",
+    "image": "images/15mm_copper_pipe.jpg"
+  },
+  {
+    "title": "22mm Copper Pipe",
+    "description": "",
+    "displayType": "image",
+    "image": "images/22mm_copper_pipe.jpg"
+  },
+  {
+    "title": "28mm Copper Pipe",
+    "description": "",
+    "displayType": "image",
+    "image": "images/28mm_copper_pipe.jpg"
+  },
+  {
+    "title": "12mm Valve",
+    "description": "",
+    "displayType": "image",
+    "image": "images/12mm_valve.jpg"
+  },
+  {
+    "title": "15mm Valve",
+    "description": "",
+    "displayType": "image",
+    "image": "images/15mm_valve.jpg"
+  },
+  {
+    "title": "22mm Valve",
+    "description": "",
+    "displayType": "image",
+    "image": "images/22mm_valve.jpg"
+  },
+  {
+    "title": "28mm Valve",
+    "description": "",
+    "displayType": "image",
+    "image": "images/28mm_valve.jpg"
+  },
+  {
+    "title": "Oxygen + Vacuum Alarming Systems",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_+_vacuum_alarming_systems.jpg"
+  },
+  {
+    "title": "Oxygen + Nitrous Failure Alarm",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_+_nitrous_failure_alarm.jpg"
+  },
+  {
+    "title": "Oxygen Flowmeter",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_flowmeter.jpg"
+  },
+  {
+    "title": "Monitor Tray",
+    "description": "",
+    "displayType": "image",
+    "image": "images/monitor_tray.jpg"
+  },
+  {
+    "title": "ICU Bedhead Panel",
+    "description": "",
+    "displayType": "image",
+    "image": "images/icu_bedhead_panel.jpg"
+  },
+  {
+    "title": "Vacuum Pump 5HP",
+    "description": "",
+    "displayType": "image",
+    "image": "images/vacuum_pump_5hp.jpg"
+  },
+  {
+    "title": "Air Compressor",
+    "description": "",
+    "displayType": "image",
+    "image": "images/air_compressor.jpg"
+  },
+  {
+    "title": "Air Pump V255 5HP",
+    "description": "",
+    "displayType": "image",
+    "image": "images/air_pump_v255_5hp.jpg"
+  },
+  {
+    "title": "Air Dryer",
+    "description": "",
+    "displayType": "image",
+    "image": "images/air_dryer.jpg"
+  },
+  {
+    "title": "De-Humidifier",
+    "description": "",
+    "displayType": "image",
+    "image": "images/dehumidifier.jpg"
+  },
+  {
+    "title": "OT Table (MATRIX MODEL)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/ot_table_matrix_model.glb"
+  },
+  {
+    "title": "OT Table (Automatic)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/ot_table_automatic.glb"
+  },
+  {
+    "title": "OT Table (C-arm compatible)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/ot_table_carm_compatible.glb"
+  },
+  {
+    "title": "Gynae OT Table (Electric)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/gynae_ot_table_electric.glb"
+  },
+  {
+    "title": "Arm Rest with SS Clamp",
+    "description": "",
+    "displayType": "image",
+    "image": "images/arm_rest_with_ss_clamp.jpg"
+  },
+  {
+    "title": "Lithotomy Bracket",
+    "description": "",
+    "displayType": "image",
+    "image": "images/lithotomy_bracket.jpg"
+  },
+  {
+    "title": "OT Mattress",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_mattress.jpg"
+  },
+  {
+    "title": "OT Leg Support",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_leg_support.jpg"
+  },
+  {
+    "title": "Yellphine Attachment",
+    "description": "",
+    "displayType": "image",
+    "image": "images/yellphine_attachment.jpg"
+  },
+  {
+    "title": "OT Safety Belt",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_safety_belt.jpg"
+  },
+  {
+    "title": "OT Electrical Control Panel",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_electrical_control_panel.jpg"
+  },
+  {
+    "title": "OT LED Light (Double Dome - Aluminum)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/ot_led_light_double_dome__aluminum.glb"
+  },
+  {
+    "title": "OT LED Light (Double Dome - SS)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/ot_led_light_double_dome__ss.glb"
+  },
+  {
+    "title": "OT LED Light (Single Dome - SS)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/ot_led_light_single_dome__ss.glb"
+  },
+  {
+    "title": "Casualty LED Light",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/casualty_led_light.glb"
+  },
+  {
+    "title": "OT Light CT-5",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_light_ct5.jpg"
+  },
+  {
+    "title": "Examination Light",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/examination_light.glb"
+  },
+  {
+    "title": "Portable Spotlight",
+    "description": "",
+    "displayType": "image",
+    "image": "images/portable_spotlight.jpg"
+  },
+  {
+    "title": "OT Light SMPS",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_light_smps.jpg"
+  },
+  {
+    "title": "OT Light Handle",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_light_handle.jpg"
+  },
+  {
+    "title": "OT Light Focus Controller",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_light_focus_controller.jpg"
+  },
+  {
+    "title": "OT Light Control Panel",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_light_control_panel.jpg"
+  },
+  {
+    "title": "OT Light SS Bush + Connector",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_light_ss_bush_+_connector.jpg"
+  },
+  {
+    "title": "OT Light Panel Connector",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_light_panel_connector.jpg"
+  },
+  {
+    "title": "Horizontal Cylindrical Autoclave (PLC)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/horizontal_cylindrical_autoclave_plc.glb"
+  },
+  {
+    "title": "Horizontal Cylindrical Autoclave (Digital Panel)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/horizontal_cylindrical_autoclave_digital_panel.jpg"
+  },
+  {
+    "title": "Vertical Autoclave",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/vertical_autoclave.glb"
+  },
+  {
+    "title": "Autoclave Drum",
+    "description": "",
+    "displayType": "image",
+    "image": "images/autoclave_drum.jpg"
+  },
+  {
+    "title": "ETO Sterilizer",
+    "description": "",
+    "displayType": "image",
+    "image": "images/eto_sterilizer.jpg"
+  },
+  {
+    "title": "ETO Gas Cartridge",
+    "description": "",
+    "displayType": "image",
+    "image": "images/eto_gas_cartridge.jpg"
+  },
+  {
+    "title": "Sealing Machine",
+    "description": "",
+    "displayType": "image",
+    "image": "images/sealing_machine.jpg"
+  },
+  {
+    "title": "Autoclave Thermal Paper Roll",
+    "description": "",
+    "displayType": "image",
+    "image": "images/autoclave_thermal_paper_roll.jpg"
+  },
+  {
+    "title": "ICU Bed (7-function)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/icu_bed_7function.glb"
+  },
+  {
+    "title": "ICU Bed (5-function)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/icu_bed_5function.glb"
+  },
+  {
+    "title": "ICU Bed (Manual)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/icu_bed_manual.glb"
+  },
+  {
+    "title": "Semi-Fowler Bed (Electric)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/semifowler_bed_electric.glb"
+  },
+  {
+    "title": "Semi-Fowler Bed (Manual)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/semifowler_bed_manual.glb"
+  },
+  {
+    "title": "Fowler Bed",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/fowler_bed.glb"
+  },
+  {
+    "title": "General Bed",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/general_bed.glb"
+  },
+  {
+    "title": "Bed Side Locker (Deluxe)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/bed_side_locker_deluxe.jpg"
+  },
+  {
+    "title": "Bed Side Locker (MS)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/bed_side_locker_ms.jpg"
+  },
+  {
+    "title": "Bed Side Locker (ABS)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/bed_side_locker_abs.jpg"
+  },
+  {
+    "title": "Over Bed Table (ABS)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/over_bed_table_abs.jpg"
+  },
+  {
+    "title": "Over Bed Table (Gas Spring)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/over_bed_table_gas_spring.jpg"
+  },
+  {
+    "title": "Over Bed Table (Manual)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/over_bed_table_manual.jpg"
+  },
+  {
+    "title": "Over Bed Table (Fixed)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/over_bed_table_fixed.jpg"
+  },
+  {
+    "title": "Wheel Chair",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/wheel_chair.glb"
+  },
+  {
+    "title": "Stretcher",
+    "description": "",
+    "displayType": "image",
+    "image": "images/stretcher.jpg"
+  },
+  {
+    "title": "Emergency Recovery Trolley",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/emergency_recovery_trolley.glb"
+  },
+  {
+    "title": "Crash Cart (304 SS)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/crash_cart_304_ss.glb"
+  },
+  {
+    "title": "Crash Cart (Polycarbonate)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/crash_cart_polycarbonate.glb"
+  },
+  {
+    "title": "Crash Cart (202 SS)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/crash_cart_202_ss.glb"
+  },
+  {
+    "title": "IV Stand",
+    "description": "",
+    "displayType": "image",
+    "image": "images/iv_stand.jpg"
+  },
+  {
+    "title": "Footstep (Single)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/footstep_single.jpg"
+  },
+  {
+    "title": "Footstep (Double)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/footstep_double.jpg"
+  },
+  {
+    "title": "Bed Side Screen",
+    "description": "",
+    "displayType": "image",
+    "image": "images/bed_side_screen.jpg"
+  },
+  {
+    "title": "Medicine Trolley (304 SS)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/medicine_trolley_304_ss.glb"
+  },
+  {
+    "title": "Medicine Trolley (202 SS)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/medicine_trolley_202_ss.glb"
+  },
+  {
+    "title": "Revolving Stool",
+    "description": "",
+    "displayType": "image",
+    "image": "images/revolving_stool.jpg"
+  },
+  {
+    "title": "Instrument Trolley",
+    "description": "",
+    "displayType": "image",
+    "image": "images/instrument_trolley.jpg"
+  },
+  {
+    "title": "Dressing Trolley",
+    "description": "",
+    "displayType": "image",
+    "image": "images/dressing_trolley.jpg"
+  },
+  {
+    "title": "OT Fogger Machine (SS)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_fogger_machine_ss.jpg"
+  },
+  {
+    "title": "OT Fogger Machine (Plastic)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/ot_fogger_machine_plastic.jpg"
+  },
+  {
+    "title": "Scrub Hand Wash",
+    "description": "",
+    "displayType": "image",
+    "image": "images/scrub_hand_wash.jpg"
+  },
+  {
+    "title": "Electric Derma Chair",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/electric_derma_chair.glb"
+  },
+  {
+    "title": "Anesthesia Workstation (Double Vaporizer)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/anesthesia_workstation_double_vaporizer.glb"
+  },
+  {
+    "title": "Anesthesia Workstation (Indian)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/anesthesia_workstation_indian.glb"
+  },
+  {
+    "title": "Anesthesia Classic Machine",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/anesthesia_classic_machine.glb"
+  },
+  {
+    "title": "Anesthesia Major Machine",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/anesthesia_major_machine.glb"
+  },
+  {
+    "title": "Anesthesia Vaporizer",
+    "description": "",
+    "displayType": "image",
+    "image": "images/anesthesia_vaporizer.jpg"
+  },
+  {
+    "title": "Bains Circuit",
+    "description": "",
+    "displayType": "image",
+    "image": "images/bains_circuit.jpg"
+  },
+  {
+    "title": "JR Set",
+    "description": "",
+    "displayType": "image",
+    "image": "images/jr_set.jpg"
+  },
+  {
+    "title": "Soda Lime",
+    "description": "",
+    "displayType": "image",
+    "image": "images/soda_lime.jpg"
+  },
+  {
+    "title": "ICU Ventilator (Korean)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/icu_ventilator_korean.jpg"
+  },
+  {
+    "title": "ICU Ventilator (Versamed)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/icu_ventilator_versamed.jpg"
+  },
+  {
+    "title": "Transport Ventilator",
+    "description": "",
+    "displayType": "image",
+    "image": "images/transport_ventilator.jpg"
+  },
+  {
+    "title": "Bubble CPAP",
+    "description": "",
+    "displayType": "image",
+    "image": "images/bubble_cpap.jpg"
+  },
+  {
+    "title": "Oxygen Cylinder (D-type)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_cylinder_dtype.jpg"
+  },
+  {
+    "title": "Oxygen Cylinder (Aluminum)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_cylinder_aluminum.jpg"
+  },
+  {
+    "title": "Multi Para Monitor (Korean)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/multi_para_monitor_korean.glb"
+  },
+  {
+    "title": "Multi Para Monitor (Indian)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/multi_para_monitor_indian.glb"
+  },
+  {
+    "title": "7 Para Monitor",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/7_para_monitor.glb"
+  },
+  {
+    "title": "5 Para Monitor (Korean)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/5_para_monitor_korean.glb"
+  },
+  {
+    "title": "5 Para Monitor (Chinese)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/5_para_monitor_chinese.glb"
+  },
+  {
+    "title": "3 Para Monitor (Korean)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/3_para_monitor_korean.glb"
+  },
+  {
+    "title": "3 Para Monitor (Chinese)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/3_para_monitor_chinese.glb"
+  },
+  {
+    "title": "SpO2 Monitor Probe",
+    "description": "",
+    "displayType": "image",
+    "image": "images/spo2_monitor_probe.jpg"
+  },
+  {
+    "title": "NIBP Cuff and Tubing",
+    "description": "",
+    "displayType": "image",
+    "image": "images/nibp_cuff_and_tubing.jpg"
+  },
+  {
+    "title": "Suction Machine (Half HP)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/suction_machine_half_hp.jpg"
+  },
+  {
+    "title": "Suction Machine (1 HP)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/suction_machine_1_hp.jpg"
+  },
+  {
+    "title": "Suction Machine (Ambulance)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/suction_machine_ambulance.jpg"
+  },
+  {
+    "title": "Suction Machine (Noiseless)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/suction_machine_noiseless.jpg"
+  },
+  {
+    "title": "Infusion Pump",
+    "description": "",
+    "displayType": "image",
+    "image": "images/infusion_pump.jpg"
+  },
+  {
+    "title": "Syringe Pump",
+    "description": "",
+    "displayType": "image",
+    "image": "images/syringe_pump.jpg"
+  },
+  {
+    "title": "Defibrillator (Korean)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/defibrillator_korean.jpg"
+  },
+  {
+    "title": "Defibrillator (Philips)",
+    "description": "",
+    "displayType": "image",
+    "image": "images/defibrillator_philips.jpg"
+  },
+  {
+    "title": "Baby Warmer (Double Surface)",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/baby_warmer_double_surface.glb"
+  },
+  {
+    "title": "Baby Warmer with Phototherapy",
+    "description": "",
+    "displayType": "3d",
+    "glb": "images/baby_warmer_with_phototherapy.glb"
+  }
+]
