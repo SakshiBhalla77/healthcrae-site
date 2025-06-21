@@ -1,0 +1,128 @@
+/* ==========================
+   Product Page Layout Styles
+   ========================== */
+
+/* Main section wrapper */
+.catalogue-wrapper {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+}
+.filter-group input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Flex layout: sidebar + grid */
+.layout-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Sidebar Filter Panel */
+.filter-sidebar {
+  width: 270px;
+  background-color: var(--bg-tertiary);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  font-family: "Inter", sans-serif;
+}
+
+.filter-sidebar h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.filter-group {
+  margin-bottom: 2rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.filter-group select,
+.filter-group input[type="number"] {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.filter-group select:focus,
+.filter-group input[type="number"]:focus {
+  border-color: var(--navy-blue);
+}
+
+#applyFilters {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--navy-blue);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+#applyFilters:hover {
+  background-color: var(--navy-blue-hover);
+}
+
+.filter-group input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+#applyFilters:hover {
+  background-color: var(--navy-blue-hover);
+}
+
+/* Product Grid */
+.product-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Product card override (just in case) */
+.catalogue-card {
+  background-color: var(--bg-tertiary);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  padding: 1.2rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.catalogue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--shadow);
+}

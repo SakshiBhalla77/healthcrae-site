@@ -3,774 +3,986 @@
     "title": "Medical Oxygen Manifold System (Fully-automatic)",
     "description": "",
     "displayType": "image",
-    "image": "images/Medical_Oxygen_Manifold_System.jpg"
+    "image": "images/Medical_Oxygen_Manifold_System.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Medical Oxygen Manifold System (Semi-automatic)",
     "description": "",
     "displayType": "image",
-    "image": "images/medical_xyz.jpg"
+    "image": "images/medical_xyz.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Oxygen Control Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/Oxygen_Control_Panel.jpg"
+    "image": "images/Oxygen_Control_Panel.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Manifold NRV",
     "description": "",
     "displayType": "image",
-    "image": "images/ManifoldNRV.jpg"
+    "image": "images/ManifoldNRV.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "SS Flexible Tail Pipe",
     "description": "",
     "displayType": "image",
-    "image": "images/SS_Flexible_Tail_Pipe.jpg"
+    "image": "images/SS_Flexible_Tail_Pipe.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "IOX Regulator Kit",
     "description": "",
     "displayType": "image",
-    "image": "images/iox_regulator_kit.jpg"
+    "image": "images/IOX_Regulator_Kit.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Oxygen Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_outlet_point.jpg"
+    "image": "images/oxygen_outlet_point.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Vacuum Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/vacuum_outlet_point.jpg"
+    "image": "images/vacuum_outlet_point.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "CO2 Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/co2_outlet_point.jpg"
+    "image": "images/co2_outlet_point.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "N2O Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/n2o_outlet_point.jpg"
+    "image": "images/n2o_outlet_point.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Air Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/air_outlet_point.jpg"
-  },
-  {
-    "title": "Oxygen Point Nose Block",
-    "description": "",
-    "displayType": "image",
-    "image": "images/oxygen_point_nose_block.jpg"
+    "image": "images/air_outlet_point.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Ward Vacuum Unit",
     "description": "",
     "displayType": "image",
-    "image": "images/ward_vacuum_unit.jpg"
+    "image": "images/ward_vacuum_unit.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
-    "title": "12mm Copper Pipe",
-    "description": "",
+    "title": "Copper Pipe",
+    "description": "Durable medical-grade copper pipe available in multiple sizes.",
     "displayType": "image",
-    "image": "images/12mm_copper_pipe.jpg"
+    "image": "images/12mm_copper_pipe.jpg",
+    "category": "oxygen",
+    "price": 10000,
+    "sizes": ["12mm", "15mm", "22mm", "28mm"]
   },
   {
-    "title": "15mm Copper Pipe",
-    "description": "",
+    "title": "Valve",
+    "description": "High-quality brass valves in multiple sizes.",
     "displayType": "image",
-    "image": "images/15mm_copper_pipe.jpg"
-  },
-  {
-    "title": "22mm Copper Pipe",
-    "description": "",
-    "displayType": "image",
-    "image": "images/22mm_copper_pipe.jpg"
-  },
-  {
-    "title": "28mm Copper Pipe",
-    "description": "",
-    "displayType": "image",
-    "image": "images/28mm_copper_pipe.jpg"
-  },
-  {
-    "title": "12mm Valve",
-    "description": "",
-    "displayType": "image",
-    "image": "images/12mm_valve.jpg"
-  },
-  {
-    "title": "15mm Valve",
-    "description": "",
-    "displayType": "image",
-    "image": "images/15mm_valve.jpg"
-  },
-  {
-    "title": "22mm Valve",
-    "description": "",
-    "displayType": "image",
-    "image": "images/22mm_valve.jpg"
-  },
-  {
-    "title": "28mm Valve",
-    "description": "",
-    "displayType": "image",
-    "image": "images/28mm_valve.jpg"
+    "image": "images/12mm_valve.jpg",
+    "category": "oxygen",
+    "price": 10000,
+    "sizes": ["12mm", "15mm", "22mm", "28mm"]
   },
   {
     "title": "Oxygen + Vacuum Alarming Systems",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_+_vacuum_alarming_systems.jpg"
+    "image": "images/oxygen_Vacuum_Alarming_Systems.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Oxygen + Nitrous Failure Alarm",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_+_nitrous_failure_alarm.jpg"
+    "image": "images/oxygen_+_nitrous_failure_alarm.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Oxygen Flowmeter",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_flowmeter.jpg"
+    "image": "images/oxygen_flowmeter.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Monitor Tray",
     "description": "",
     "displayType": "image",
-    "image": "images/monitor_tray.jpg"
+    "image": "images/monitor_tray.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "ICU Bedhead Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/icu_bedhead_panel.jpg"
+    "image": "images/icu_bedhead_panel.jpg",
+    "category": "icu",
+    "price": 10000
   },
   {
     "title": "Vacuum Pump 5HP",
     "description": "",
     "displayType": "image",
-    "image": "images/vacuum_pump_5hp.jpg"
+    "image": "images/vacuum_pump_5hp.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Air Compressor",
     "description": "",
     "displayType": "image",
-    "image": "images/air_compressor.jpg"
+    "image": "images/air_compressor.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Air Pump V255 5HP",
     "description": "",
     "displayType": "image",
-    "image": "images/air_pump_v255_5hp.jpg"
+    "image": "images/air_pump_v255_5hp.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Air Dryer",
     "description": "",
     "displayType": "image",
-    "image": "images/air_dryer.jpg"
+    "image": "images/air_dryer.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "De-Humidifier",
     "description": "",
     "displayType": "image",
-    "image": "images/dehumidifier.jpg"
+    "image": "images/dehumidifier.jpg",
+    "category": "oxygen",
+    "price": 10000
+  },
+  {
+    "title": "Oxygen Point Nose Block",
+    "description": "",
+    "displayType": "image",
+    "image": "images/oxygen_point_nose_block.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "OT Table (MATRIX MODEL)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/ot_table_matrix_model.glb"
+    "glb": "images/ot_table_matrix_model.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Table (Automatic)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/ot_table_automatic.glb"
+    "glb": "images/ot_table_automatic.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Table (C-arm compatible)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/ot_table_carm_compatible.glb"
+    "glb": "images/ot_table_carm_compatible.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Gynae OT Table (Electric)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/gynae_ot_table_electric.glb"
+    "glb": "images/gynae_ot_table_electric.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Arm Rest with SS Clamp",
     "description": "",
     "displayType": "image",
-    "image": "images/arm_rest_with_ss_clamp.jpg"
+    "image": "images/arm_rest_with_ss_clamp.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Lithotomy Bracket",
     "description": "",
     "displayType": "image",
-    "image": "images/lithotomy_bracket.jpg"
+    "image": "images/lithotomy_bracket.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Mattress",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_mattress.jpg"
+    "image": "images/ot_mattress.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Leg Support",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_leg_support.jpg"
+    "image": "images/ot_leg_support.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Yellphine Attachment",
     "description": "",
     "displayType": "image",
-    "image": "images/yellphine_attachment.jpg"
+    "image": "images/yellphine_attachment.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Safety Belt",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_safety_belt.jpg"
+    "image": "images/ot_safety_belt.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Electrical Control Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_electrical_control_panel.jpg"
+    "image": "images/ot_electrical_control_panel.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT LED Light (Double Dome - Aluminum)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/ot_led_light_double_dome__aluminum.glb"
+    "glb": "images/ot_led_light_double_dome__aluminum.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT LED Light (Double Dome - SS)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/ot_led_light_double_dome__ss.glb"
+    "glb": "images/ot_led_light_double_dome__ss.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT LED Light (Single Dome - SS)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/ot_led_light_single_dome__ss.glb"
+    "glb": "images/ot_led_light_single_dome__ss.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Casualty LED Light",
     "description": "",
     "displayType": "3d",
-    "glb": "images/casualty_led_light.glb"
+    "glb": "images/casualty_led_light.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Light CT-5",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_ct5.jpg"
+    "image": "images/ot_light_ct5.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Examination Light",
     "description": "",
     "displayType": "3d",
-    "glb": "images/examination_light.glb"
+    "glb": "images/examination_light.glb",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Portable Spotlight",
     "description": "",
     "displayType": "image",
-    "image": "images/portable_spotlight.jpg"
+    "image": "images/portable_spotlight.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Light SMPS",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_smps.jpg"
+    "image": "images/ot_light_smps.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Light Handle",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_handle.jpg"
+    "image": "images/ot_light_handle.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Light Focus Controller",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_focus_controller.jpg"
+    "image": "images/ot_light_focus_controller.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Light Control Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_control_panel.jpg"
+    "image": "images/ot_light_control_panel.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Light SS Bush + Connector",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_ss_bush_+_connector.jpg"
+    "image": "images/ot_light_ss_bush_+_connector.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "OT Light Panel Connector",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_panel_connector.jpg"
+    "image": "images/ot_light_panel_connector.jpg",
+    "category": "ot",
+    "price": 10000
   },
   {
     "title": "Horizontal Cylindrical Autoclave (PLC)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/horizontal_cylindrical_autoclave_plc.glb"
+    "glb": "images/horizontal_cylindrical_autoclave_plc.glb",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Horizontal Cylindrical Autoclave (Digital Panel)",
     "description": "",
     "displayType": "image",
-    "image": "images/horizontal_cylindrical_autoclave_digital_panel.jpg"
+    "image": "images/horizontal_cylindrical_autoclave_digital_panel.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Vertical Autoclave",
     "description": "",
     "displayType": "3d",
-    "glb": "images/vertical_autoclave.glb"
+    "glb": "images/vertical_autoclave.glb",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Autoclave Drum",
     "description": "",
     "displayType": "image",
-    "image": "images/autoclave_drum.jpg"
+    "image": "images/autoclave_drum.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "ETO Sterilizer",
     "description": "",
     "displayType": "image",
-    "image": "images/eto_sterilizer.jpg"
+    "image": "images/eto_sterilizer.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "ETO Gas Cartridge",
     "description": "",
     "displayType": "image",
-    "image": "images/eto_gas_cartridge.jpg"
+    "image": "images/eto_gas_cartridge.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Sealing Machine",
     "description": "",
     "displayType": "image",
-    "image": "images/sealing_machine.jpg"
+    "image": "images/sealing_machine.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Autoclave Thermal Paper Roll",
     "description": "",
     "displayType": "image",
-    "image": "images/autoclave_thermal_paper_roll.jpg"
+    "image": "images/autoclave_thermal_paper_roll.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "ICU Bed (7-function)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/icu_bed_7function.glb"
+    "glb": "images/icu_bed_7function.glb",
+    "category": "icu",
+    "price": 10000
   },
   {
     "title": "ICU Bed (5-function)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/icu_bed_5function.glb"
+    "glb": "images/icu_bed_5function.glb",
+    "category": "icu",
+    "price": 10000
   },
   {
     "title": "ICU Bed (Manual)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/icu_bed_manual.glb"
+    "glb": "images/icu_bed_manual.glb",
+    "category": "icu",
+    "price": 10000
   },
   {
     "title": "Semi-Fowler Bed (Electric)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/semifowler_bed_electric.glb"
+    "glb": "images/semifowler_bed_electric.glb",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Semi-Fowler Bed (Manual)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/semifowler_bed_manual.glb"
+    "glb": "images/semifowler_bed_manual.glb",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Fowler Bed",
     "description": "",
     "displayType": "3d",
-    "glb": "images/fowler_bed.glb"
+    "glb": "images/fowler_bed.glb",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "General Bed",
     "description": "",
     "displayType": "3d",
-    "glb": "images/general_bed.glb"
+    "glb": "images/general_bed.glb",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Bed Side Locker (Deluxe)",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_locker_deluxe.jpg"
+    "image": "images/bed_side_locker_deluxe.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Bed Side Locker (MS)",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_locker_ms.jpg"
+    "image": "images/bed_side_locker_ms.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Bed Side Locker (ABS)",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_locker_abs.jpg"
+    "image": "images/bed_side_locker_abs.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Over Bed Table (ABS)",
     "description": "",
     "displayType": "image",
-    "image": "images/over_bed_table_abs.jpg"
+    "image": "images/over_bed_table_abs.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Over Bed Table (Gas Spring)",
     "description": "",
     "displayType": "image",
-    "image": "images/over_bed_table_gas_spring.jpg"
+    "image": "images/over_bed_table_gas_spring.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Over Bed Table (Manual)",
     "description": "",
     "displayType": "image",
-    "image": "images/over_bed_table_manual.jpg"
+    "image": "images/over_bed_table_manual.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Over Bed Table (Fixed)",
     "description": "",
     "displayType": "image",
-    "image": "images/over_bed_table_fixed.jpg"
+    "image": "images/over_bed_table_fixed.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Wheel Chair",
     "description": "",
     "displayType": "3d",
-    "glb": "images/wheel_chair.glb"
+    "glb": "images/wheel_chair.glb",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Stretcher",
     "description": "",
     "displayType": "image",
-    "image": "images/stretcher.jpg"
+    "image": "images/stretcher.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Emergency Recovery Trolley",
     "description": "",
     "displayType": "3d",
-    "glb": "images/emergency_recovery_trolley.glb"
+    "glb": "images/emergency_recovery_trolley.glb",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "Crash Cart (304 SS)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/crash_cart_304_ss.glb"
+    "glb": "images/crash_cart_304_ss.glb",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "Crash Cart (Polycarbonate)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/crash_cart_polycarbonate.glb"
+    "glb": "images/crash_cart_polycarbonate.glb",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "Crash Cart (202 SS)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/crash_cart_202_ss.glb"
+    "glb": "images/crash_cart_202_ss.glb",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "IV Stand",
     "description": "",
     "displayType": "image",
-    "image": "images/iv_stand.jpg"
+    "image": "images/iv_stand.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Footstep (Single)",
     "description": "",
     "displayType": "image",
-    "image": "images/footstep_single.jpg"
+    "image": "images/footstep_single.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Footstep (Double)",
     "description": "",
     "displayType": "image",
-    "image": "images/footstep_double.jpg"
+    "image": "images/footstep_double.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Bed Side Screen",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_screen.jpg"
+    "image": "images/bed_side_screen.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Medicine Trolley (304 SS)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/medicine_trolley_304_ss.glb"
+    "glb": "images/medicine_trolley_304_ss.glb",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "Medicine Trolley (202 SS)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/medicine_trolley_202_ss.glb"
+    "glb": "images/medicine_trolley_202_ss.glb",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "Revolving Stool",
     "description": "",
     "displayType": "image",
-    "image": "images/revolving_stool.jpg"
+    "image": "images/revolving_stool.jpg",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Instrument Trolley",
     "description": "",
     "displayType": "image",
-    "image": "images/instrument_trolley.jpg"
+    "image": "images/instrument_trolley.jpg",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "Dressing Trolley",
     "description": "",
     "displayType": "image",
-    "image": "images/dressing_trolley.jpg"
+    "image": "images/dressing_trolley.jpg",
+    "category": "trolley",
+    "price": 10000
   },
   {
     "title": "OT Fogger Machine (SS)",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_fogger_machine_ss.jpg"
+    "image": "images/ot_fogger_machine_ss.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "OT Fogger Machine (Plastic)",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_fogger_machine_plastic.jpg"
+    "image": "images/ot_fogger_machine_plastic.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Scrub Hand Wash",
     "description": "",
     "displayType": "image",
-    "image": "images/scrub_hand_wash.jpg"
+    "image": "images/scrub_hand_wash.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Electric Derma Chair",
     "description": "",
     "displayType": "3d",
-    "glb": "images/electric_derma_chair.glb"
+    "glb": "images/electric_derma_chair.glb",
+    "category": "ward",
+    "price": 10000
   },
   {
     "title": "Anesthesia Workstation (Double Vaporizer)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/anesthesia_workstation_double_vaporizer.glb"
+    "glb": "images/anesthesia_workstation_double_vaporizer.glb",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "Anesthesia Workstation (Indian)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/anesthesia_workstation_indian.glb"
+    "glb": "images/anesthesia_workstation_indian.glb",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "Anesthesia Classic Machine",
     "description": "",
     "displayType": "3d",
-    "glb": "images/anesthesia_classic_machine.glb"
+    "glb": "images/anesthesia_classic_machine.glb",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "Anesthesia Major Machine",
     "description": "",
     "displayType": "3d",
-    "glb": "images/anesthesia_major_machine.glb"
+    "glb": "images/anesthesia_major_machine.glb",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "Anesthesia Vaporizer",
     "description": "",
     "displayType": "image",
-    "image": "images/anesthesia_vaporizer.jpg"
+    "image": "images/anesthesia_vaporizer.jpg",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "Bains Circuit",
     "description": "",
     "displayType": "image",
-    "image": "images/bains_circuit.jpg"
+    "image": "images/bains_circuit.jpg",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "JR Set",
     "description": "",
     "displayType": "image",
-    "image": "images/jr_set.jpg"
+    "image": "images/jr_set.jpg",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "Soda Lime",
     "description": "",
     "displayType": "image",
-    "image": "images/soda_lime.jpg"
+    "image": "images/soda_lime.jpg",
+    "category": "anesthesia",
+    "price": 10000
   },
   {
     "title": "ICU Ventilator (Korean)",
     "description": "",
     "displayType": "image",
-    "image": "images/icu_ventilator_korean.jpg"
+    "image": "images/icu_ventilator_korean.jpg",
+    "category": "ventilator",
+    "price": 10000
   },
   {
     "title": "ICU Ventilator (Versamed)",
     "description": "",
     "displayType": "image",
-    "image": "images/icu_ventilator_versamed.jpg"
+    "image": "images/icu_ventilator_versamed.jpg",
+    "category": "ventilator",
+    "price": 10000
   },
   {
     "title": "Transport Ventilator",
     "description": "",
     "displayType": "image",
-    "image": "images/transport_ventilator.jpg"
+    "image": "images/transport_ventilator.jpg",
+    "category": "ventilator",
+    "price": 10000
   },
   {
     "title": "Bubble CPAP",
     "description": "",
     "displayType": "image",
-    "image": "images/bubble_cpap.jpg"
+    "image": "images/bubble_cpap.jpg",
+    "category": "neonatal",
+    "price": 10000
   },
   {
     "title": "Oxygen Cylinder (D-type)",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_cylinder_dtype.jpg"
+    "image": "images/oxygen_cylinder_dtype.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Oxygen Cylinder (Aluminum)",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_cylinder_aluminum.jpg"
+    "image": "images/oxygen_cylinder_aluminum.jpg",
+    "category": "oxygen",
+    "price": 10000
   },
   {
     "title": "Multi Para Monitor (Korean)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/multi_para_monitor_korean.glb"
+    "glb": "images/multi_para_monitor_korean.glb",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Multi Para Monitor (Indian)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/multi_para_monitor_indian.glb"
+    "glb": "images/multi_para_monitor_indian.glb",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "7 Para Monitor",
     "description": "",
     "displayType": "3d",
-    "glb": "images/7_para_monitor.glb"
+    "glb": "images/7_para_monitor.glb",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "5 Para Monitor (Korean)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/5_para_monitor_korean.glb"
+    "glb": "images/5_para_monitor_korean.glb",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "5 Para Monitor (Chinese)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/5_para_monitor_chinese.glb"
+    "glb": "images/5_para_monitor_chinese.glb",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "3 Para Monitor (Korean)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/3_para_monitor_korean.glb"
+    "glb": "images/3_para_monitor_korean.glb",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "3 Para Monitor (Chinese)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/3_para_monitor_chinese.glb"
+    "glb": "images/3_para_monitor_chinese.glb",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "SpO2 Monitor Probe",
     "description": "",
     "displayType": "image",
-    "image": "images/spo2_monitor_probe.jpg"
+    "image": "images/spo2_monitor_probe.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "NIBP Cuff and Tubing",
     "description": "",
     "displayType": "image",
-    "image": "images/nibp_cuff_and_tubing.jpg"
+    "image": "images/nibp_cuff_and_tubing.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Suction Machine (Half HP)",
     "description": "",
     "displayType": "image",
-    "image": "images/suction_machine_half_hp.jpg"
+    "image": "images/suction_machine_half_hp.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Suction Machine (1 HP)",
     "description": "",
     "displayType": "image",
-    "image": "images/suction_machine_1_hp.jpg"
+    "image": "images/suction_machine_1_hp.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Suction Machine (Ambulance)",
     "description": "",
     "displayType": "image",
-    "image": "images/suction_machine_ambulance.jpg"
+    "image": "images/suction_machine_ambulance.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Suction Machine (Noiseless)",
     "description": "",
     "displayType": "image",
-    "image": "images/suction_machine_noiseless.jpg"
+    "image": "images/suction_machine_noiseless.jpg",
+    "category": "surgical",
+    "price": 10000
   },
   {
     "title": "Infusion Pump",
     "description": "",
     "displayType": "image",
-    "image": "images/infusion_pump.jpg"
+    "image": "images/infusion_pump.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Syringe Pump",
     "description": "",
     "displayType": "image",
-    "image": "images/syringe_pump.jpg"
+    "image": "images/syringe_pump.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Defibrillator (Korean)",
     "description": "",
     "displayType": "image",
-    "image": "images/defibrillator_korean.jpg"
+    "image": "images/defibrillator_korean.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Defibrillator (Philips)",
     "description": "",
     "displayType": "image",
-    "image": "images/defibrillator_philips.jpg"
+    "image": "images/defibrillator_philips.jpg",
+    "category": "monitoring",
+    "price": 10000
   },
   {
     "title": "Baby Warmer (Double Surface)",
     "description": "",
     "displayType": "3d",
-    "glb": "images/baby_warmer_double_surface.glb"
+    "glb": "images/baby_warmer_double_surface.glb",
+    "category": "neonatal",
+    "price": 10000
   },
   {
     "title": "Baby Warmer with Phototherapy",
     "description": "",
     "displayType": "3d",
-    "glb": "images/baby_warmer_with_phototherapy.glb"
+    "glb": "images/baby_warmer_with_phototherapy.glb",
+    "category": "neonatal",
+    "price": 10000
   }
 ]

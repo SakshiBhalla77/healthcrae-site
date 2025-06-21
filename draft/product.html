@@ -2,11 +2,12 @@
 
 <html lang="en" data-theme="light">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usha Healthcare - Medical Equipment</title>
     <link rel="stylesheet" href="Styles/index.css" />
-    <link rel="stylesheet" href="Styles/products.css" />
     <!-- Font Awesome for icons - Using the solid theme for consistency -->
     <link
       rel="stylesheet"
@@ -125,52 +126,216 @@
     </div>
 
     <!-- Catalogue Section -->
-    <section class="catalogue-wrapper">
-      <div class="layout-wrapper">
-        
-        <!-- Sidebar Filter -->
-        <aside class="filter-sidebar">
-          <h3>Filters</h3>
-        
-          <!-- Product Category Filter -->
-          <div class="filter-group">
-            <label for="typeFilter">Product Category:</label>
-            <select id="typeFilter">
-              <option value="all">All</option>
-              <option value="oxygen">Medical Gas Systems</option>
-              <option value="ot">OT Equipment</option>
-              <option value="icu">ICU Equipment</option>
-              <option value="ward">Ward Furniture</option>
-              <option value="trolley">Trolleys & Accessories</option>
-              <option value="anesthesia">Anesthesia</option>
-              <option value="monitoring">Monitoring Devices</option>
-              <option value="ventilator">Ventilators</option>
-              <option value="neonatal">Neonatal Care</option>
-              <option value="surgical">Sterilization & Surgical</option>
-            </select>
-          </div>
-        
-          <!-- Price Range Filter -->
-          <div class="filter-group">
-            <label>Price Range:</label>
-            <input type="number" id="minPrice" placeholder="Min ₹" />
-            <input type="number" id="maxPrice" placeholder="Max ₹" />
-          </div>
-        
-          <!-- Filter Button -->
-          <button id="applyFilters">Apply Filters</button>
-        </aside>
-        
-        
-    
-        <!-- Product Grid -->
-        <main class="product-grid" id="dynamic-catalogue-grid">
-          <!-- Product cards will be dynamically inserted here -->
-        </main>
-    
+    <section class="catalogue">
+      <h2>Featured Products</h2>
+      <p class="section-subtitle">
+        Explore our wide range of medical equipment and hospital solutions.
+      </p>
+
+      <div class="catalogue-grid" id="dynamic-catalogue-grid">
+        <!-- Product 1: Anesthesia Cart (3D) -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/anesthesia-cart.glb"
+            alt="Anesthesia Cart 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="180deg 85deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Anesthesia Cart</h3>
+          <p>Advanced anesthesia cart designed for mobility and storage in critical care.</p> <!-- Anesthesia Cart -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 2: Anesthesia Machine -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/anesthesia-machine.glb"
+            alt="Anesthesia Machine 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 85deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Anesthesia Machine</h3>
+          <p>High-precision anesthesia machine with monitoring and ventilation support.</p> <!-- Anesthesia Machine -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 3: Operation Theatre Light -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/OT light.glb"
+            alt="Operation Theatre Light 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 85deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>LED OT Light</h3>
+          <p>Shadow-free LED light for surgical precision and energy efficiency.</p> <!-- LED OT Light -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 4: ICU Bed -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/icubed.glb"
+            alt="ICU Bed 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="180deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>ICU Bed</h3>
+          <p>Multi-position ICU bed designed for comfort, monitoring, and caregiver ease.</p> <!-- ICU Bed -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 5: Steam Sterilizer -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Steam Sterilizer.glb"
+            alt="Steam Sterilizer 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="80deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Steam Sterilizer</h3>
+          <p>Steam sterilizer for safe disinfection of medical and surgical instruments.</p> <!-- Steam Sterilizer -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 6: Endoscopic stand -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Endoscopic_stand.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Laproscopic Trolley</h3>
+          <p>Mobile trolley for organizing and transporting laparoscopic tools efficiently.</p> <!-- Laproscopic Trolley -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 7: anesthesia vaporizer -->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Anesthesia_vaporiser.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Anesthesia vaporizer</h3>
+          <p>Reliable vaporizer for controlled delivery of anesthetic gases.</p> <!-- Anesthesia Vaporizer -->
+          <button>View Details</button>
+        </div>
+
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Dialysis_bed.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="360deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>Dialysis Bed (Electric)</h3>
+          <p>Fully adjustable electric dialysis bed for patient comfort and accessibility.</p> <!-- Dialysis Bed (Electric) -->
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 9: monitor-->
+        <div class="catalogue-card">
+          <model-viewer
+            src="images/Patient_monitor.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3>CMS8000 Patient Monitor</h3>
+          <p>Multi-parameter monitor for real-time tracking of patient vitals.</p> <!-- CMS8000 Patient Monitor -->
+          <button>View Details</button>
+        </div>
+
+         <!-- Product 10: ANAESTHESIA-VENTILATOR-->
+         <div class="catalogue-card">
+          <model-viewer
+            src="images/anesthesia_ventilator.glb"
+            alt="Endoscopic Stand 3D Model"
+            camera-controls
+            disable-zoom
+            disable-pan
+            disable-tap
+            interaction-prompt="none"
+            auto-rotate
+            background-color="#FFFFFF"
+            camera-orbit="90deg 90deg auto"
+            style="width: 100%; height: 250px; border-radius: 10px"
+          ></model-viewer>
+          <h3> Anaesthesia-Ventilator</h3>
+          <p>Integrated anesthesia ventilator ensuring consistent and safe respiration.</p> <!-- Anesthesia Ventilator -->
+          <button>View Details</button>
+        </div>
+
+
+        <!-- Add more products as needed to complete rows of 4 -->
       </div>
     </section>
-    
 
     <!-- Products Section
     <section class="products">
@@ -746,10 +911,6 @@
         // Search functionality
         const searchInput = document.querySelector(".search-container input");
         const searchButton = document.querySelector(".search-container button");
-        const storedSearch = localStorage.getItem("searchQuery");
-if (storedSearch && searchInput) {
-  searchInput.value = storedSearch; // ✅ sets the value in search bar
-}
     
         searchButton.addEventListener("click", function () {
           performSearch();
@@ -764,7 +925,6 @@ if (storedSearch && searchInput) {
         function performSearch() {
           const searchTerm = searchInput.value.trim().toLowerCase();
           if (searchTerm) {
-            // alert(`Searching for: ${searchTerm}`);
             // Here you would typically implement actual search functionality
           }
         }
@@ -780,89 +940,60 @@ if (storedSearch && searchInput) {
       });
     </script>
 
-<script>
-  let allProducts = [];
 
-  // Load all products once
-  fetch("data/all-products.json")
+<script>
+  fetch('data/all-products.json')
     .then(res => res.json())
     .then(products => {
-      allProducts = products;
+      const grid = document.getElementById("dynamic-catalogue-grid");
 
-const searchQuery = localStorage.getItem("searchQuery");
-if (searchQuery) {
-  const filtered = allProducts.filter(p =>
-    p.title.toLowerCase().includes(searchQuery)
-  );
-  renderProducts(filtered);
-  localStorage.removeItem("searchQuery"); // clear it after use
-} else {
-  renderProducts(allProducts);
-}
-
-    });
-
-  // Render product cards
-  function renderProducts(products) {
-    const grid = document.getElementById("dynamic-catalogue-grid");
-    grid.innerHTML = "";
-
-    products.forEach((p) => {
-      const card = document.createElement("div");
-      card.className = "catalogue-card";
-
-      let mediaContent = "";
-
-if (p.sizes) {
+      products.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "catalogue-card";
+        let mediaContent = "";
+if (p.displayType === "model") {
   mediaContent = `
-    <img src="${p.image}" class="variant-image" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px" />
-    <select class="variant-dropdown" style="margin-top: 10px; padding: 6px; width: 100%; border-radius: 6px;">
-      ${p.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
-    </select>
+    <div class="media-wrapper">
+      <span class="badge-3d">3D</span>
+      <model-viewer
+        src="${p.glb}"
+        alt="${p.title} 3D Model"
+        auto-rotate
+        camera-controls
+        disable-pan
+        disable-zoom
+        style="width: 100%; height: 250px; border-radius: 10px"
+      ></model-viewer>
+    </div>
   `;
-} else {
-  mediaContent = p.displayType === "model"
-    ? `<model-viewer src="${p.glb}" auto-rotate camera-controls disable-pan disable-zoom style="width: 100%; height: 250px; border-radius: 10px"></model-viewer>`
-    : `<img src="${p.image}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px" />`;
+} else if (p.displayType === "image") {
+  mediaContent = `
+    <img
+      src="${p.image}"
+      alt="${p.title} Image"
+      style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px"
+    />
+  `;
 }
 
 
-      card.innerHTML = `
-        ${mediaContent}
-        <h3>${p.title}</h3>
-        <p>${p.description}</p>
-        <div class="button-container">
-          <button class="view-details">View Details</button>
-          <button class="cart-button" aria-label="Add to Cart">
-            <i class="fas fa-cart-plus fa-lg"></i>
-          </button>
-        </div>
-      `;
+card.innerHTML = `
+  ${mediaContent}
+  <h3>${p.title}</h3>
+  <p>${p.description}</p>
+  <div class="button-container">
+    <button class="view-details">View Details</button>
+    <button class="cart-button" aria-label="Add to Cart">
+      <i class="fas fa-cart-plus fa-lg"></i>
+    </button>
+  </div>
+`;
 
-      grid.appendChild(card);
+        grid.appendChild(card);
+      });
     });
-  }
-
-  // Apply filter logic
-  document.getElementById("applyFilters").addEventListener("click", () => {
-    const selectedCategory = document.getElementById("typeFilter").value;
-    const minPrice = parseInt(document.getElementById("minPrice").value) || 0;
-    const maxPrice = parseInt(document.getElementById("maxPrice").value) || Infinity;
-
-    const filteredProducts = allProducts.filter((product) => {
-      const matchCategory = selectedCategory === "all" || product.category === selectedCategory;
-      const matchPrice = product.price >= minPrice && product.price <= maxPrice;
-      return matchCategory && matchPrice;
-    });
-
-    renderProducts(filteredProducts);
-  });
 </script>
 
-
-
-
-<script src="search.js"></script>
 
 
   </body>
