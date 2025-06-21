@@ -72,7 +72,7 @@
     "price": 10000
   },
   {
-    "title": "N2O Outlet Point",
+    "title": "N2O_Outlet_Point",
     "description": "",
     "displayType": "image",
     "image": "images/n2o_outlet_point.jpg",
@@ -83,7 +83,7 @@
     "title": "Air Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/air_outlet_point.jpg",
+    "image": "images/Air_Outlet_Point.jpg",
     "category": "oxygen",
     "price": 10000
   },
@@ -91,7 +91,7 @@
     "title": "Ward Vacuum Unit",
     "description": "",
     "displayType": "image",
-    "image": "images/ward_vacuum_unit.jpg",
+    "image": "images/Ward_vacuum_unit.jpg",
     "category": "oxygen",
     "price": 10000
   },
@@ -99,7 +99,7 @@
     "title": "Copper Pipe",
     "description": "Durable medical-grade copper pipe available in multiple sizes.",
     "displayType": "image",
-    "image": "images/12mm_copper_pipe.jpg",
+    "image": "images/12mm_Copper_Pipe.jpg",
     "category": "oxygen",
     "price": 10000,
     "sizes": ["12mm", "15mm", "22mm", "28mm"]
@@ -108,7 +108,7 @@
     "title": "Valve",
     "description": "High-quality brass valves in multiple sizes.",
     "displayType": "image",
-    "image": "images/12mm_valve.jpg",
+    "image": "images/12mm_Valve.jpg",
     "category": "oxygen",
     "price": 10000,
     "sizes": ["12mm", "15mm", "22mm", "28mm"]
