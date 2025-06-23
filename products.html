@@ -106,12 +106,7 @@
           </div>
         </div>
 
-        <!-- Cart Icon -->
-        <div class="header-icon">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="icon-label">Cart</span>
-          <span class="cart-count">0</span>
-        </div>
+      
 
         <!-- Mobile hamburger menu -->
         <div class="mobile-menu-toggle">
@@ -474,51 +469,10 @@
           flex: 1;
         }
         
-        .cart-button {
-          background-color: var(--navy-blue);
-          color: white;
-          border: none;
-          border-radius: 20px;
-          padding: 0.7rem;
-          width: 50px;
-          height: 50px;
-          font-size: 1.1rem;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: background-color 0.3s ease, transform 0.2s ease;
-          position: relative;
-        }
+       
         
-        .cart-button:hover {
-          background-color: var(--navy-blue-hover);
-          transform: scale(1.05);
-        }
         
-        /* Tooltip styles */
-        .cart-button::after {
-          content: "Add to Cart";
-          position: absolute;
-          bottom: -35px;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: rgba(0, 0, 0, 0.8);
-          color: white;
-          padding: 5px 10px;
-          border-radius: 4px;
-          font-size: 12px;
-          white-space: nowrap;
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 0.3s ease, transform 0.3s ease;
-          z-index: 10;
-        }
-        
-        .cart-button:hover::after {
-          opacity: 1;
-          transform: translateX(-50%) translateY(-8px);
-        }
+
         
         @media (max-width: 600px) {
           .popup-image-small {
@@ -557,38 +511,12 @@
           const buttonContainer = document.createElement('div');
           buttonContainer.className = 'button-container';
           
-          // Create cart button
-          const cartButton = document.createElement('button');
-          cartButton.className = 'cart-button';
-          cartButton.innerHTML = '<i class="fas fa-cart-plus fa-lg"></i>';
-          cartButton.setAttribute('aria-label', 'Add to Cart');
-          
-          // Add cart functionality
-          cartButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            const productName = card.querySelector('h3').textContent.trim();
-            
-            // Update cart count
-            const cartCountElement = document.querySelector('.cart-count');
-            const currentCount = parseInt(cartCountElement.textContent) || 0;
-            cartCountElement.textContent = currentCount + 1;
-            
-            // Give user feedback
-            cartButton.innerHTML = '<i class="fas fa-check fa-lg"></i>';
-            setTimeout(() => {
-              cartButton.innerHTML = '<i class="fas fa-cart-plus fa-lg"></i>';
-            }, 1500);
-            
-            // Alert user
-            alert(`Added ${productName} to cart`);
-          });
-          
-          // Move the original button to the container and add the new button
-          viewButton.parentNode.removeChild(viewButton);
-          buttonContainer.appendChild(viewButton);
-          buttonContainer.appendChild(cartButton);
+       
+
+
+
+
+
           
           // Add the button container to the card
           card.appendChild(buttonContainer);
@@ -807,14 +735,7 @@ searchInput.addEventListener("input", function () {
           }
         }
     
-        // Cart functionality
-        const cartIcon =
-          document.querySelector(".fa-shopping-cart").parentElement;
-        cartIcon.addEventListener("click", function () {
-          alert(
-            "Your cart is currently empty. Browse our products to add items."
-          );
-        });
+    
       });
     </script>
 
@@ -875,11 +796,9 @@ if (p.sizes) {
         <h3>${p.title}</h3>
         <p>${p.description}</p>
         <div class="button-container">
-          <button class="view-details">View Details</button>
-          <button class="cart-button" aria-label="Add to Cart">
-            <i class="fas fa-cart-plus fa-lg"></i>
-          </button>
-        </div>
+  <button class="view-details">View Details</button>
+</div>
+
       `;
 
       grid.appendChild(card);

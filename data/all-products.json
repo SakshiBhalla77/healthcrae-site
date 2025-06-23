@@ -3,7 +3,7 @@
     "title": "Medical Oxygen Manifold System (Fully-automatic)",
     "description": "",
     "displayType": "image",
-    "image": "images/1_Medical_Oxygen_Manifold_System.png",
+    "image": "Product_Images/1_Medical_Oxygen_Manifold_System.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -11,7 +11,7 @@
     "title": "Medical Oxygen Manifold System (Semi-automatic)",
     "description": "",
     "displayType": "image",
-    "image": "images/medical_xyz.jpg",
+    "image": "Product_Images/1_Medical_Oxygen_Manifold_System.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -19,7 +19,7 @@
     "title": "Oxygen Control Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/Oxygen_Control_Panel.jpg",
+    "image": "Product_Images/3_Oxygen_Control_Panel_alt.png",
     "category": "ot",
     "price": 10000
   },
@@ -27,7 +27,7 @@
     "title": "Manifold NRV",
     "description": "",
     "displayType": "image",
-    "image": "images/ManifoldNRV.jpg",
+    "image": "Product_Images/4_Manifold_NRV.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -35,7 +35,7 @@
     "title": "SS Flexible Tail Pipe",
     "description": "",
     "displayType": "image",
-    "image": "images/SS_Flexible_Tail_Pipe.jpg",
+    "image": "Product_Images/5_SS_Flexible_Tail_Pipe.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -43,7 +43,7 @@
     "title": "IOX Regulator Kit",
     "description": "",
     "displayType": "image",
-    "image": "images/IOX_Regulator_Kit.jpg",
+    "image": "Product_Images/6_IOX_Regulator_Kit.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -51,7 +51,7 @@
     "title": "Oxygen Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_outlet_point.jpg",
+    "image": "Product_Images/7_Oxygen_Outlet_Point.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -59,7 +59,7 @@
     "title": "Vacuum Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/vacuum_outlet_point.jpg",
+    "image": "Product_Images/8_Vacuum_Outlet_Point.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -67,7 +67,7 @@
     "title": "CO2 Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/co2_outlet_point.jpg",
+    "image": "Product_Images/9_CO2_Outlet_Point.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -75,7 +75,7 @@
     "title": "N2O_Outlet_Point",
     "description": "",
     "displayType": "image",
-    "image": "images/N2O_outlet_point.jpg",
+    "image": "Product_Images/10_N2O_Outlet_Point.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -83,7 +83,7 @@
     "title": "Air Outlet Point",
     "description": "",
     "displayType": "image",
-    "image": "images/Air_Outlet_Point.jpg",
+    "image": "Product_Images/11_Air_Outlet_Point.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -91,7 +91,7 @@
     "title": "Ward Vacuum Unit",
     "description": "",
     "displayType": "image",
-    "image": "images/Ward_vacuum_unit.jpg",
+    "image": "Product_Images/12_Ward_Vacuum_Unit.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -99,7 +99,7 @@
     "title": "Copper Pipe",
     "description": "Durable medical-grade copper pipe available in multiple sizes.",
     "displayType": "image",
-    "image": "images/12mm_Copper_Pipe.jpg",
+    "image": "Product_Images/13_Copper_Pipe.png",
     "category": "oxygen",
     "price": 10000,
     "sizes": ["12mm", "15mm", "22mm", "28mm"]
@@ -108,7 +108,7 @@
     "title": "Valve",
     "description": "High-quality brass valves in multiple sizes.",
     "displayType": "image",
-    "image": "images/12mm_Valve.jpg",
+    "image": "Product_Images/14_Valve.png",
     "category": "oxygen",
     "price": 10000,
     "sizes": ["12mm", "15mm", "22mm", "28mm"]
@@ -117,7 +117,7 @@
     "title": "Oxygen + Vacuum Alarming Systems",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_Vacuum_Alarming_Systems.jpg",
+    "image": "Product_Images/15_Oxygen_Vacuum Alarming_Systems.png",
     "category": "monitoring",
     "price": 10000
   },
@@ -125,7 +125,7 @@
     "title": "Oxygen + Nitrous Failure Alarm",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_+_nitrous_failure_alarm.jpg",
+    "image": "Product_Images/16_ Oxygen_Nitrous Failure_Alarm.png",
     "category": "monitoring",
     "price": 10000
   },
@@ -133,7 +133,7 @@
     "title": "Oxygen Flowmeter",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_flowmeter.jpg",
+    "image": "Product_Images/17_Oxygen Flowmeter.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -141,7 +141,7 @@
     "title": "Monitor Tray",
     "description": "",
     "displayType": "image",
-    "image": "images/monitor_tray.jpg",
+    "image": "Product_Images/18_Monitor_Tray.png",
     "category": "monitoring",
     "price": 10000
   },
@@ -149,7 +149,7 @@
     "title": "ICU Bedhead Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/icu_bedhead_panel.jpg",
+    "image": "Product_Images/19_ICU_Bedhead_Panel.png",
     "category": "icu",
     "price": 10000
   },
@@ -157,7 +157,7 @@
     "title": "Vacuum Pump 5HP",
     "description": "",
     "displayType": "image",
-    "image": "images/vacuum_pump_5hp.jpg",
+    "image": "Product_Images/20_Vacuum_Pump_5HP.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -165,7 +165,7 @@
     "title": "Air Compressor",
     "description": "",
     "displayType": "image",
-    "image": "images/air_compressor.jpg",
+    "image": "Product_Images/21_Air_Compressor.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -173,7 +173,7 @@
     "title": "Air Pump V255 5HP",
     "description": "",
     "displayType": "image",
-    "image": "images/air_pump_v255_5hp.jpg",
+    "image": "Product_Images/22_Air_Pump_V255_5HP.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -181,7 +181,7 @@
     "title": "Air Dryer",
     "description": "",
     "displayType": "image",
-    "image": "images/air_dryer.jpg",
+    "image": "Product_Images/23_Air_Dryer.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -189,7 +189,7 @@
     "title": "De-Humidifier",
     "description": "",
     "displayType": "image",
-    "image": "images/dehumidifier.jpg",
+    "image": "Product_Images/24_De_Humidifier.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -197,39 +197,39 @@
     "title": "Oxygen Point Nose Block",
     "description": "",
     "displayType": "image",
-    "image": "images/oxygen_point_nose_block.jpg",
+    "image": "Product_Images/25_Oxygen_Point_Nose_Block.png",
     "category": "oxygen",
     "price": 10000
   },
   {
     "title": "OT Table (MATRIX MODEL)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/ot_table_matrix_model.glb",
+    "displayType": "image",
+    "image": "Product_Images/27_OT_Table_Automatic.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "OT Table (Automatic)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/ot_table_automatic.glb",
+    "displayType": "image",
+    "image": "Product_Images/27_OT_Table_Automatic.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "OT Table (C-arm compatible)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/ot_table_carm_compatible.glb",
+    "displayType": "image",
+    "image": "Product_Images/27_OT_Table_Automatic.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "Gynae OT Table (Electric)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/gynae_ot_table_electric.glb",
+    "displayType": "image",
+    "image": "Product_Images/28_Gynae_OT_Table.png",
     "category": "ot",
     "price": 10000
   },
@@ -237,7 +237,7 @@
     "title": "Arm Rest with SS Clamp",
     "description": "",
     "displayType": "image",
-    "image": "images/arm_rest_with_ss_clamp.jpg",
+    "image": "Product_Images/29_Arm_Rest _with_SS _Clamp.png",
     "category": "ot",
     "price": 10000
   },
@@ -245,7 +245,7 @@
     "title": "Lithotomy Bracket",
     "description": "",
     "displayType": "image",
-    "image": "images/lithotomy_bracket.jpg",
+    "image": "Product_Images/30_Lithotomy_Bracket.png",
     "category": "ot",
     "price": 10000
   },
@@ -253,7 +253,7 @@
     "title": "OT Mattress",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_mattress.jpg",
+    "image": "Product_Images/31_OT_Mattress.png",
     "category": "ot",
     "price": 10000
   },
@@ -261,7 +261,7 @@
     "title": "OT Leg Support",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_leg_support.jpg",
+    "image": "Product_Images/32_OT_Leg_Support.png",
     "category": "ot",
     "price": 10000
   },
@@ -269,7 +269,7 @@
     "title": "Yellphine Attachment",
     "description": "",
     "displayType": "image",
-    "image": "images/yellphine_attachment.jpg",
+    "image": "Product_Images/33_Yellphine_Attachment.png",
     "category": "ot",
     "price": 10000
   },
@@ -277,7 +277,7 @@
     "title": "OT Safety Belt",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_safety_belt.jpg",
+    "image": "Product_Images/34_OT_Safety_Belt.png",
     "category": "ot",
     "price": 10000
   },
@@ -285,39 +285,39 @@
     "title": "OT Electrical Control Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_electrical_control_panel.jpg",
+    "image": "Product_Images/35_OT_Electrical_Control_Panel.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "OT LED Light (Double Dome - Aluminum)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/ot_led_light_double_dome__aluminum.glb",
+    "displayType": "image",
+    "image": "Product_Images/36_ OT_LED_Light.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "OT LED Light (Double Dome - SS)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/ot_led_light_double_dome__ss.glb",
+    "displayType": "image",
+    "image": "Product_Images/36_ OT_LED_Light.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "OT LED Light (Single Dome - SS)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/ot_led_light_single_dome__ss.glb",
+    "displayType": "image",
+    "image": "Product_Images/36_ OT_LED_Light.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "Casualty LED Light",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/casualty_led_light.glb",
+    "displayType": "image",
+    "image": "Product_Images/37_OTCasualty_LED_Light.png",
     "category": "ot",
     "price": 10000
   },
@@ -325,15 +325,15 @@
     "title": "OT Light CT-5",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_ct5.jpg",
+    "image": "Product_Images/38_OT_Light_CT_5.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "Examination Light",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/examination_light.glb",
+    "displayType": "image",
+    "image": "Product_Images/39_Examination_Light.png",
     "category": "ot",
     "price": 10000
   },
@@ -341,7 +341,7 @@
     "title": "Portable Spotlight",
     "description": "",
     "displayType": "image",
-    "image": "images/portable_spotlight.jpg",
+    "image": "Product_Images/38_Portable_Spotlight.png",
     "category": "ot",
     "price": 10000
   },
@@ -349,7 +349,7 @@
     "title": "OT Light SMPS",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_smps.jpg",
+    "image": "Product_Images/40_OT_Light_SMPS.png",
     "category": "ot",
     "price": 10000
   },
@@ -357,7 +357,7 @@
     "title": "OT Light Handle",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_handle.jpg",
+    "image": "Product_Images/41_OT_Light_Handle.png",
     "category": "ot",
     "price": 10000
   },
@@ -365,7 +365,7 @@
     "title": "OT Light Focus Controller",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_focus_controller.jpg",
+    "image": "Product_Images/41_OT_Light_Focus_Controller.png",
     "category": "ot",
     "price": 10000
   },
@@ -373,7 +373,7 @@
     "title": "OT Light Control Panel",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_control_panel.jpg",
+    "image": "Product_Images/42_OT_Light_Control_Panel.png",
     "category": "ot",
     "price": 10000
   },
@@ -381,7 +381,7 @@
     "title": "OT Light SS Bush + Connector",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_ss_bush_+_connector.jpg",
+    "image": "Product_Images/43_OT_Light_SS_Bush_Connector.png",
     "category": "ot",
     "price": 10000
   },
@@ -389,15 +389,15 @@
     "title": "OT Light Panel Connector",
     "description": "",
     "displayType": "image",
-    "image": "images/ot_light_panel_connector.jpg",
+    "image": "Product_Images/44_OT_Light_Panel_Connector.png",
     "category": "ot",
     "price": 10000
   },
   {
     "title": "Horizontal Cylindrical Autoclave (PLC)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/horizontal_cylindrical_autoclave_plc.glb",
+    "displayType": "image",
+    "image": "Product_Images/45_Horizontal_Cylindrical_Autoclave.png",
     "category": "surgical",
     "price": 10000
   },
@@ -405,15 +405,15 @@
     "title": "Horizontal Cylindrical Autoclave (Digital Panel)",
     "description": "",
     "displayType": "image",
-    "image": "images/horizontal_cylindrical_autoclave_digital_panel.jpg",
+    "image": "Product_Images/45_Horizontal_Cylindrical_Autoclave.png",
     "category": "surgical",
     "price": 10000
   },
   {
     "title": "Vertical Autoclave",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/vertical_autoclave.glb",
+    "displayType": "image",
+    "image": "Product_Images/46_Vertical_Autoclave.png",
     "category": "surgical",
     "price": 10000
   },
@@ -421,7 +421,7 @@
     "title": "Autoclave Drum",
     "description": "",
     "displayType": "image",
-    "image": "images/autoclave_drum.jpg",
+    "image": "Product_Images/47_Autoclave_Drum.png",
     "category": "surgical",
     "price": 10000
   },
@@ -429,7 +429,7 @@
     "title": "ETO Sterilizer",
     "description": "",
     "displayType": "image",
-    "image": "images/eto_sterilizer.jpg",
+    "image": "Product_Images/48_ETO_Sterilizer.png",
     "category": "surgical",
     "price": 10000
   },
@@ -437,7 +437,7 @@
     "title": "ETO Gas Cartridge",
     "description": "",
     "displayType": "image",
-    "image": "images/eto_gas_cartridge.jpg",
+    "image": "Product_Images/49_ETO_Gas_Cartridge.png",
     "category": "surgical",
     "price": 10000
   },
@@ -445,7 +445,7 @@
     "title": "Sealing Machine",
     "description": "",
     "displayType": "image",
-    "image": "images/sealing_machine.jpg",
+    "image": "Product_Images/50_Sealing_Machine.png",
     "category": "surgical",
     "price": 10000
   },
@@ -453,63 +453,63 @@
     "title": "Autoclave Thermal Paper Roll",
     "description": "",
     "displayType": "image",
-    "image": "images/autoclave_thermal_paper_roll.jpg",
+    "image": "Product_Images/51_Autoclave_Thermal_Paper_roll.png",
     "category": "surgical",
     "price": 10000
   },
   {
     "title": "ICU Bed (7-function)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/icu_bed_7function.glb",
+    "displayType": "image",
+    "image": "Product_Images/52_ICU_bed_7_function.png",
     "category": "icu",
     "price": 10000
   },
   {
     "title": "ICU Bed (5-function)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/icu_bed_5function.glb",
+    "displayType": "image",
+    "image": "Product_Images/53_ICU_Bed_5_function.png",
     "category": "icu",
     "price": 10000
   },
   {
     "title": "ICU Bed (Manual)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/icu_bed_manual.glb",
+    "displayType": "image",
+    "image": "Product_Images/54_icu_bed_manual.png",
     "category": "icu",
     "price": 10000
   },
   {
     "title": "Semi-Fowler Bed (Electric)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/semifowler_bed_electric.glb",
+    "displayType": "image",
+    "image": "Product_Images/56_Fowler_Bed.png",
     "category": "ward",
     "price": 10000
   },
   {
     "title": "Semi-Fowler Bed (Manual)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/semifowler_bed_manual.glb",
+    "displayType": "image",
+    "image": "Product_Images/56_Fowler_Bed.png",
     "category": "ward",
     "price": 10000
   },
   {
     "title": "Fowler Bed",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/fowler_bed.glb",
+    "displayType": "image",
+    "image": "Product_Images/56_Fowler_Bed.png",
     "category": "ward",
     "price": 10000
   },
   {
     "title": "General Bed",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/general_bed.glb",
+    "displayType": "image",
+    "image": "Product_Images/57_General_Bed.png",
     "category": "ward",
     "price": 10000
   },
@@ -517,7 +517,7 @@
     "title": "Bed Side Locker (Deluxe)",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_locker_deluxe.jpg",
+    "image": "Product_Images/58_Bed_Side_Locker_Deluxe.png",
     "category": "ward",
     "price": 10000
   },
@@ -525,7 +525,7 @@
     "title": "Bed Side Locker (MS)",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_locker_ms.jpg",
+    "image": "Product_Images/60_Bed_Side_Locker_MS.png",
     "category": "ward",
     "price": 10000
   },
@@ -533,7 +533,7 @@
     "title": "Bed Side Locker (ABS)",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_locker_abs.jpg",
+    "image": "Product_Images/59_Bed_Side_Locker_ABS.png",
     "category": "ward",
     "price": 10000
   },
