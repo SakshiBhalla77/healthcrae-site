@@ -76,6 +76,8 @@
         <div class="search-container">
           <input type="text" placeholder="Search for products..." />
           <button type="submit"><i class="fas fa-search"></i></button>
+          <div class="search-suggestions"></div>
+
         </div>
       </div>
 
@@ -386,6 +388,11 @@
         </div>
       </div>
     </div>
+
+    <script>
+      let allProducts = []; // global variable
+    </script>
+    
 
     <!-- JavaScript for site functionality -->
     <script>
@@ -924,6 +931,9 @@ if (storedSearch && searchInput) {
               performSearch();
             }
           });
+
+    
+
       
           function performSearch() {
             const searchTerm = searchInput.value.trim().toLowerCase();
@@ -996,7 +1006,57 @@ if (storedSearch && searchInput) {
     });
   </script>
 
+<script>
+ fetch("data/all-products.json")
+
+    .then((res) => res.json())
+    .then((data) => {
+      allProducts = data;
+
+      const searchInput = document.querySelector(".search-container input");
+      const suggestionBox = document.querySelector(".search-suggestions");
+
+      searchInput.addEventListener("input", function () {
+        const term = searchInput.value.trim().toLowerCase();
+        suggestionBox.innerHTML = "";
+
+        if (!term) {
+          suggestionBox.style.display = "none";
+          return;
+        }
+
+        const fuse = new Fuse(allProducts, {
+          keys: ["title", "description", "category"],
+          threshold: 0.4,
+        });
+
+        const results = fuse.search(term).slice(0, 5);
+
+        if (results.length > 0) {
+          results.forEach((r) => {
+            const div = document.createElement("div");
+            div.textContent = r.item.title;
+            div.addEventListener("click", () => {
+              searchInput.value = r.item.title;
+              suggestionBox.style.display = "none";
+              localStorage.setItem("searchQuery", r.item.title);
+              window.location.href = "products.html";
+            });
+            suggestionBox.appendChild(div);
+          });
+          suggestionBox.style.display = "block";
+        } else {
+          suggestionBox.style.display = "none";
+        }
+      });
+    });
+</script>
+
+
+
 <script src="search.js"></script>
+
+
 
   
 

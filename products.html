@@ -22,6 +22,9 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
++
   </head>
   <body>
     <!-- Header -->
@@ -71,6 +74,8 @@
         <div class="search-container">
           <input type="text" placeholder="Search for products..." />
           <button type="submit"><i class="fas fa-search"></i></button>
+          <div class="search-suggestions"></div>
+
         </div>
       </div>
 
@@ -150,12 +155,7 @@
             </select>
           </div>
         
-          <!-- Price Range Filter -->
-          <div class="filter-group">
-            <label>Price Range:</label>
-            <input type="number" id="minPrice" placeholder="Min ₹" />
-            <input type="number" id="maxPrice" placeholder="Max ₹" />
-          </div>
+       
         
           <!-- Filter Button -->
           <button id="applyFilters">Apply Filters</button>
@@ -760,6 +760,44 @@ if (storedSearch && searchInput) {
             performSearch();
           }
         });
+
+
+        const suggestionBox = document.querySelector(".search-suggestions");
+
+searchInput.addEventListener("input", function () {
+  const term = searchInput.value.trim().toLowerCase();
+  suggestionBox.innerHTML = "";
+
+  if (!term) {
+    suggestionBox.style.display = "none";
+    return;
+  }
+
+  const fuse = new Fuse(allProducts, {
+    keys: ["title", "description", "category"],
+    threshold: 0.4,
+  });
+
+  const results = fuse.search(term).slice(0, 5); // top 5 suggestions
+
+  if (results.length > 0) {
+    results.forEach((r) => {
+      const div = document.createElement("div");
+      div.textContent = r.item.title;
+      div.addEventListener("click", () => {
+        searchInput.value = r.item.title;
+        suggestionBox.style.display = "none";
+        localStorage.setItem("searchQuery", r.item.title);
+        window.location.href = "products.html";
+      });
+      suggestionBox.appendChild(div);
+    });
+    suggestionBox.style.display = "block";
+  } else {
+    suggestionBox.style.display = "none";
+  }
+});
+
     
         function performSearch() {
           const searchTerm = searchInput.value.trim().toLowerCase();
@@ -791,9 +829,14 @@ if (storedSearch && searchInput) {
 
 const searchQuery = localStorage.getItem("searchQuery");
 if (searchQuery) {
-  const filtered = allProducts.filter(p =>
-    p.title.toLowerCase().includes(searchQuery)
-  );
+  const fuse = new Fuse(allProducts, {
+  keys: ['title', 'description', 'category'], // fields to search
+  threshold: 0.4, // adjust for strictness (lower = stricter)
+});
+const result = fuse.search(searchQuery);
+const filtered = result.map(r => r.item);
+
+
   renderProducts(filtered);
   localStorage.removeItem("searchQuery"); // clear it after use
 } else {
@@ -846,14 +889,10 @@ if (p.sizes) {
   // Apply filter logic
   document.getElementById("applyFilters").addEventListener("click", () => {
     const selectedCategory = document.getElementById("typeFilter").value;
-    const minPrice = parseInt(document.getElementById("minPrice").value) || 0;
-    const maxPrice = parseInt(document.getElementById("maxPrice").value) || Infinity;
-
     const filteredProducts = allProducts.filter((product) => {
-      const matchCategory = selectedCategory === "all" || product.category === selectedCategory;
-      const matchPrice = product.price >= minPrice && product.price <= maxPrice;
-      return matchCategory && matchPrice;
-    });
+  return selectedCategory === "all" || product.category === selectedCategory;
+});
+
 
     renderProducts(filteredProducts);
   });

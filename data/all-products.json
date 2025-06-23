@@ -3,7 +3,7 @@
     "title": "Medical Oxygen Manifold System (Fully-automatic)",
     "description": "",
     "displayType": "image",
-    "image": "images/Medical_Oxygen_Manifold_System.jpg",
+    "image": "images/1_Medical_Oxygen_Manifold_System.png",
     "category": "oxygen",
     "price": 10000
   },
@@ -75,7 +75,7 @@
     "title": "N2O_Outlet_Point",
     "description": "",
     "displayType": "image",
-    "image": "images/n2o_outlet_point.jpg",
+    "image": "images/N2O_outlet_point.jpg",
     "category": "oxygen",
     "price": 10000
   },

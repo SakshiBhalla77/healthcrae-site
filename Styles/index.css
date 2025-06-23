@@ -740,6 +740,31 @@ p {
   transition: background-color 0.3s ease;
 }
 
+.search-suggestions {
+  position: absolute;
+  background: rgba(47, 101, 184, 0.95);
+  border: none;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 999;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-suggestions div {
+  padding: 16px 22px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+.search-suggestions div:hover {
+  background-color: rgba(35, 77, 144, 0.95);
+}
+
 .products h2,
 .about-us h2 {
   font-size: 2rem;
