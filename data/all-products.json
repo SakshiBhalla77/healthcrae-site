@@ -1,18 +1,14 @@
 [
   {
-    "title": "Medical Oxygen Manifold System (Fully-automatic)",
-    "description": "",
+    "title": "Medical Oxygen Manifold System",
+    "description": "Oxygen delivery systems designed for hospitals, available in Fully-automatic and Semi-automatic models.",
     "displayType": "image",
     "image": "Product_Images/1_Medical_Oxygen_Manifold_System.png",
     "category": "oxygen",
-    "price": 10000
-  },
-  {
-    "title": "Medical Oxygen Manifold System (Semi-automatic)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/1_Medical_Oxygen_Manifold_System.png",
-    "category": "oxygen",
+    "variants": [
+      "Medical Oxygen Manifold System (Fully-automatic)",
+      "Medical Oxygen Manifold System (Semi-automatic)"
+    ],
     "price": 10000
   },
   {
@@ -202,27 +198,16 @@
     "price": 10000
   },
   {
-    "title": "OT Table (MATRIX MODEL)",
-    "description": "",
+    "title": "OT Table",
+    "description": "Advanced operation theatre tables suitable for various surgical procedures. Available in Matrix Model, Automatic, and C-arm compatible variants.",
     "displayType": "image",
     "image": "Product_Images/27_OT_Table_Automatic.png",
     "category": "ot",
-    "price": 10000
-  },
-  {
-    "title": "OT Table (Automatic)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/27_OT_Table_Automatic.png",
-    "category": "ot",
-    "price": 10000
-  },
-  {
-    "title": "OT Table (C-arm compatible)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/27_OT_Table_Automatic.png",
-    "category": "ot",
+    "variants": [
+      "OT Table (MATRIX MODEL)",
+      "OT Table (Automatic)",
+      "OT Table (C-arm compatible)"
+    ],
     "price": 10000
   },
   {
@@ -290,29 +275,20 @@
     "price": 10000
   },
   {
-    "title": "OT LED Light (Double Dome - Aluminum)",
-    "description": "",
+    "title": "OT LED Light",
+    "description": "High-performance operation theatre LED lights including Double Dome, Single Dome, and CT-5 variants.",
     "displayType": "image",
     "image": "Product_Images/36_ OT_LED_Light.png",
     "category": "ot",
+    "variants": [
+      "OT LED Light (Double Dome - Aluminum)",
+      "OT LED Light (Double Dome - SS)",
+      "OT LED Light (Single Dome - SS)",
+      "OT LED Light CT-5"
+    ],
     "price": 10000
   },
-  {
-    "title": "OT LED Light (Double Dome - SS)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/36_ OT_LED_Light.png",
-    "category": "ot",
-    "price": 10000
-  },
-  {
-    "title": "OT LED Light (Single Dome - SS)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/36_ OT_LED_Light.png",
-    "category": "ot",
-    "price": 10000
-  },
+
   {
     "title": "Casualty LED Light",
     "description": "",
@@ -321,14 +297,7 @@
     "category": "ot",
     "price": 10000
   },
-  {
-    "title": "OT Light CT-5",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/38_OT_Light_CT_5.png",
-    "category": "ot",
-    "price": 10000
-  },
+
   {
     "title": "Examination Light",
     "description": "",
@@ -394,19 +363,15 @@
     "price": 10000
   },
   {
-    "title": "Horizontal Cylindrical Autoclave (PLC)",
-    "description": "",
+    "title": "Horizontal Cylindrical Autoclave",
+    "description": "Sterilization unit available in PLC and Digital Panel models for reliable and efficient operation in surgical environments.",
     "displayType": "image",
     "image": "Product_Images/45_Horizontal_Cylindrical_Autoclave.png",
     "category": "surgical",
-    "price": 10000
-  },
-  {
-    "title": "Horizontal Cylindrical Autoclave (Digital Panel)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/45_Horizontal_Cylindrical_Autoclave.png",
-    "category": "surgical",
+    "variants": [
+      "Horizontal Cylindrical Autoclave (PLC)",
+      "Horizontal Cylindrical Autoclave (Digital Panel)"
+    ],
     "price": 10000
   },
   {
@@ -458,51 +423,29 @@
     "price": 10000
   },
   {
-    "title": "ICU Bed (7-function)",
-    "description": "",
+    "title": "ICU Bed",
+    "description": "Durable and patient-centric ICU beds available in 7-function, 5-function, and manual variants.",
     "displayType": "image",
     "image": "Product_Images/52_ICU_bed_7_function.png",
     "category": "icu",
-    "price": 10000
-  },
-  {
-    "title": "ICU Bed (5-function)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/53_ICU_Bed_5_function.png",
-    "category": "icu",
-    "price": 10000
-  },
-  {
-    "title": "ICU Bed (Manual)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/54_icu_bed_manual.png",
-    "category": "icu",
-    "price": 10000
-  },
-  {
-    "title": "Semi-Fowler Bed (Electric)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/56_Fowler_Bed.png",
-    "category": "ward",
-    "price": 10000
-  },
-  {
-    "title": "Semi-Fowler Bed (Manual)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/56_Fowler_Bed.png",
-    "category": "ward",
+    "variants": [
+      "ICU Bed (7-function)",
+      "ICU Bed (5-function)",
+      "ICU Bed (Manual)"
+    ],
     "price": 10000
   },
   {
     "title": "Fowler Bed",
-    "description": "",
+    "description": "Comfortable and adjustable ward beds designed for patient recovery, available in Electric, Manual, and Fowler configurations.",
     "displayType": "image",
     "image": "Product_Images/56_Fowler_Bed.png",
     "category": "ward",
+    "variants": [
+      "Semi-Fowler Bed (Electric)",
+      "Semi-Fowler Bed (Manual)",
+      "Fowler Bed"
+    ],
     "price": 10000
   },
   {
@@ -514,66 +457,37 @@
     "price": 10000
   },
   {
-    "title": "Bed Side Locker (Deluxe)",
-    "description": "",
+    "title": "Bed Side Locker",
+    "description": "Essential storage units for hospital wards, available in Deluxe, MS (mild steel), and ABS plastic variants.",
     "displayType": "image",
     "image": "Product_Images/58_Bed_Side_Locker_Deluxe.png",
     "category": "ward",
+    "variants": [
+      "Bed Side Locker (Deluxe)",
+      "Bed Side Locker (MS)",
+      "Bed Side Locker (ABS)"
+    ],
     "price": 10000
   },
   {
-    "title": "Bed Side Locker (MS)",
-    "description": "",
+    "title": "Over Bed Table",
+    "description": "Adjustable hospital overbed tables for patient convenience, available in ABS, Gas Spring, and Manual options.",
     "displayType": "image",
-    "image": "Product_Images/60_Bed_Side_Locker_MS.png",
+    "image": "Product_Images/61_Over_Bed_Table_ABS.png",
     "category": "ward",
+    "variants": [
+      "Over Bed Table (ABS)",
+      "Over Bed Table (Gas Spring)",
+      "Over Bed Table (Manual)",
+      "Over Bed Table (Fixed)"
+    ],
     "price": 10000
   },
-  {
-    "title": "Bed Side Locker (ABS)",
-    "description": "",
-    "displayType": "image",
-    "image": "Product_Images/59_Bed_Side_Locker_ABS.png",
-    "category": "ward",
-    "price": 10000
-  },
-  {
-    "title": "Over Bed Table (ABS)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/over_bed_table_abs.jpg",
-    "category": "ward",
-    "price": 10000
-  },
-  {
-    "title": "Over Bed Table (Gas Spring)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/over_bed_table_gas_spring.jpg",
-    "category": "ward",
-    "price": 10000
-  },
-  {
-    "title": "Over Bed Table (Manual)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/over_bed_table_manual.jpg",
-    "category": "ward",
-    "price": 10000
-  },
-  {
-    "title": "Over Bed Table (Fixed)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/over_bed_table_fixed.jpg",
-    "category": "ward",
-    "price": 10000
-  },
+
   {
     "title": "Wheel Chair",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/wheel_chair.glb",
+    "image": "Product_Images/63_wheel_chair.png",
     "category": "ward",
     "price": 10000
   },
@@ -581,183 +495,133 @@
     "title": "Stretcher",
     "description": "",
     "displayType": "image",
-    "image": "images/stretcher.jpg",
+    "image": "Product_Images/64_Strecher.png",
     "category": "ward",
     "price": 10000
   },
   {
     "title": "Emergency Recovery Trolley",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/emergency_recovery_trolley.glb",
+    "displayType": "image",
+    "image": "Product_Images/65_Emergency_Recovery_Trolley.png",
     "category": "trolley",
     "price": 10000
   },
   {
-    "title": "Crash Cart (304 SS)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/crash_cart_304_ss.glb",
+    "title": "Crash Cart",
+    "description": "Emergency crash carts designed for quick medical response, available in 304 SS, 202 SS, and Polycarbonate variants.",
+    "displayType": "image",
+    "image": "Product_Images/66_Crash_Cart.png",
     "category": "trolley",
-    "price": 10000
-  },
-  {
-    "title": "Crash Cart (Polycarbonate)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/crash_cart_polycarbonate.glb",
-    "category": "trolley",
-    "price": 10000
-  },
-  {
-    "title": "Crash Cart (202 SS)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/crash_cart_202_ss.glb",
-    "category": "trolley",
+    "variants": [
+      "Crash Cart (304 SS)",
+      "Crash Cart (Polycarbonate)",
+      "Crash Cart (202 SS)"
+    ],
     "price": 10000
   },
   {
     "title": "IV Stand",
     "description": "",
     "displayType": "image",
-    "image": "images/iv_stand.jpg",
+    "image": "Product_Images/67_IV_Stand.png",
     "category": "ward",
     "price": 10000
   },
   {
-    "title": "Footstep (Single)",
-    "description": "",
+    "title": "Footstep",
+    "description": "Sturdy footstep stools for patient and staff assistance, available in Single and Double step variants.",
     "displayType": "image",
-    "image": "images/footstep_single.jpg",
+    "image": "Product_Images/68_Footstep.png",
     "category": "ward",
-    "price": 10000
-  },
-  {
-    "title": "Footstep (Double)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/footstep_double.jpg",
-    "category": "ward",
+    "variants": ["Footstep (Single)", "Footstep (Double)"],
     "price": 10000
   },
   {
     "title": "Bed Side Screen",
     "description": "",
     "displayType": "image",
-    "image": "images/bed_side_screen.jpg",
+    "image": "Product_Images/69_Bed_Side_Screen.png",
     "category": "ward",
     "price": 10000
   },
   {
-    "title": "Medicine Trolley (304 SS)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/medicine_trolley_304_ss.glb",
+    "title": "Medicine Trolley",
+    "description": "Durable stainless steel medicine trolleys designed for hospital use, available in 304 SS and 202 SS variants.",
+    "displayType": "image",
+    "image": "Product_Images/70_Medicine_Trolley.png",
     "category": "trolley",
-    "price": 10000
-  },
-  {
-    "title": "Medicine Trolley (202 SS)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/medicine_trolley_202_ss.glb",
-    "category": "trolley",
+    "variants": ["Medicine Trolley (304 SS)", "Medicine Trolley (202 SS)"],
     "price": 10000
   },
   {
     "title": "Revolving Stool",
     "description": "",
     "displayType": "image",
-    "image": "images/revolving_stool.jpg",
+    "image": "Product_Images/71_Revolving_Stool.png",
     "category": "ward",
     "price": 10000
   },
   {
-    "title": "Instrument Trolley",
-    "description": "",
+    "title": "Hospital Trolley",
+    "description": "Essential trolleys for hospital procedures, including Instrument and Dressing trolleys used in surgical and clinical setups.",
     "displayType": "image",
-    "image": "images/instrument_trolley.jpg",
+    "image": "Product_Images/72_Instrument_Trolley.png",
     "category": "trolley",
+    "variants": ["Instrument Trolley", "Dressing Trolley"],
     "price": 10000
   },
   {
-    "title": "Dressing Trolley",
-    "description": "",
+    "title": "OT Fogger Machine",
+    "description": "Sterilization fogger machines ideal for operation theatres, available in Stainless Steel and Plastic variants.",
     "displayType": "image",
-    "image": "images/dressing_trolley.jpg",
-    "category": "trolley",
-    "price": 10000
-  },
-  {
-    "title": "OT Fogger Machine (SS)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/ot_fogger_machine_ss.jpg",
+    "image": "Product_Images/73_OT_Fogger_Machine.png",
     "category": "surgical",
-    "price": 10000
-  },
-  {
-    "title": "OT Fogger Machine (Plastic)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/ot_fogger_machine_plastic.jpg",
-    "category": "surgical",
+    "variants": ["OT Fogger Machine (SS)", "OT Fogger Machine (Plastic)"],
     "price": 10000
   },
   {
     "title": "Scrub Hand Wash",
     "description": "",
     "displayType": "image",
-    "image": "images/scrub_hand_wash.jpg",
+    "image": "Product_Images/76_Scrub_Hand_Wash.png",
     "category": "surgical",
     "price": 10000
   },
   {
     "title": "Electric Derma Chair",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/electric_derma_chair.glb",
+    "displayType": "image",
+    "image": "Product_Images/75_Electric_Derma_Chair.png",
     "category": "ward",
     "price": 10000
   },
   {
-    "title": "Anesthesia Workstation (Double Vaporizer)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/anesthesia_workstation_double_vaporizer.glb",
+    "title": "Anesthesia Workstation",
+    "description": "Modern anesthesia workstations with multiple configurations for surgical environments, available in Double Vaporizer and Indian models.",
+    "displayType": "image",
+    "image": "Product_Images/77_Anesthesia_Workstation.png",
     "category": "anesthesia",
+    "variants": [
+      "Anesthesia Workstation (Double Vaporizer)",
+      "Anesthesia Workstation (Indian)"
+    ],
     "price": 10000
   },
   {
-    "title": "Anesthesia Workstation (Indian)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/anesthesia_workstation_indian.glb",
+    "title": "Anesthesia Machine",
+    "description": "Reliable anesthesia machines suitable for various surgical procedures, available in Classic and Major configurations.",
+    "displayType": "image",
+    "image": "Product_Images/79_Anesthesia_Classic_Machine.png",
     "category": "anesthesia",
-    "price": 10000
-  },
-  {
-    "title": "Anesthesia Classic Machine",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/anesthesia_classic_machine.glb",
-    "category": "anesthesia",
-    "price": 10000
-  },
-  {
-    "title": "Anesthesia Major Machine",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/anesthesia_major_machine.glb",
-    "category": "anesthesia",
+    "variants": ["Anesthesia Classic Machine", "Anesthesia Major Machine"],
     "price": 10000
   },
   {
     "title": "Anesthesia Vaporizer",
     "description": "",
     "displayType": "image",
-    "image": "images/anesthesia_vaporizer.jpg",
+    "image": "Product_Images/78_Anesthesia_Vaporizer.png",
     "category": "anesthesia",
     "price": 10000
   },
@@ -765,7 +629,7 @@
     "title": "Bains Circuit",
     "description": "",
     "displayType": "image",
-    "image": "images/bains_circuit.jpg",
+    "image": "Product_Images/80_bains_circuit.png",
     "category": "anesthesia",
     "price": 10000
   },
@@ -773,7 +637,7 @@
     "title": "JR Set",
     "description": "",
     "displayType": "image",
-    "image": "images/jr_set.jpg",
+    "image": "Product_Images/81_JR_Set.png",
     "category": "anesthesia",
     "price": 10000
   },
@@ -781,31 +645,24 @@
     "title": "Soda Lime",
     "description": "",
     "displayType": "image",
-    "image": "images/soda_lime.jpg",
+    "image": "Product_Images/82_Soda_Lime.png",
     "category": "anesthesia",
     "price": 10000
   },
   {
-    "title": "ICU Ventilator (Korean)",
-    "description": "",
+    "title": "ICU Ventilator",
+    "description": "Advanced ventilators suitable for critical care units, available in multiple trusted models.",
     "displayType": "image",
-    "image": "images/icu_ventilator_korean.jpg",
+    "image": "Product_Images/83_ICU_Ventilator.png",
     "category": "ventilator",
-    "price": 10000
-  },
-  {
-    "title": "ICU Ventilator (Versamed)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/icu_ventilator_versamed.jpg",
-    "category": "ventilator",
+    "variants": ["ICU Ventilator (Korean)", "ICU Ventilator (Versamed)"],
     "price": 10000
   },
   {
     "title": "Transport Ventilator",
     "description": "",
     "displayType": "image",
-    "image": "images/transport_ventilator.jpg",
+    "image": "Product_Images/84_Transport_Ventilator.png",
     "category": "ventilator",
     "price": 10000
   },
@@ -813,87 +670,40 @@
     "title": "Bubble CPAP",
     "description": "",
     "displayType": "image",
-    "image": "images/bubble_cpap.jpg",
+    "image": "Product_Images/85_Bubble_CPAP.png",
     "category": "neonatal",
     "price": 10000
   },
   {
-    "title": "Oxygen Cylinder (D-type)",
-    "description": "",
+    "title": "Oxygen Cylinder",
+    "description": "Reliable medical oxygen cylinders available in multiple types for hospital and emergency use.",
     "displayType": "image",
-    "image": "images/oxygen_cylinder_dtype.jpg",
+    "image": "Product_Images/86_Oxygen_Cylinder.png",
     "category": "oxygen",
+    "variants": ["Oxygen Cylinder (D-type)", "Oxygen Cylinder (Aluminum)"],
     "price": 10000
   },
   {
-    "title": "Oxygen Cylinder (Aluminum)",
-    "description": "",
+    "title": "Multi Para Monitor",
+    "description": "A comprehensive patient monitor with multiple configurations available.",
     "displayType": "image",
-    "image": "images/oxygen_cylinder_aluminum.jpg",
-    "category": "oxygen",
-    "price": 10000
-  },
-  {
-    "title": "Multi Para Monitor (Korean)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/multi_para_monitor_korean.glb",
+    "image": "Product_Images/87_Multi_Para_Monitor.png",
     "category": "monitoring",
-    "price": 10000
-  },
-  {
-    "title": "Multi Para Monitor (Indian)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/multi_para_monitor_indian.glb",
-    "category": "monitoring",
-    "price": 10000
-  },
-  {
-    "title": "7 Para Monitor",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/7_para_monitor.glb",
-    "category": "monitoring",
-    "price": 10000
-  },
-  {
-    "title": "5 Para Monitor (Korean)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/5_para_monitor_korean.glb",
-    "category": "monitoring",
-    "price": 10000
-  },
-  {
-    "title": "5 Para Monitor (Chinese)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/5_para_monitor_chinese.glb",
-    "category": "monitoring",
-    "price": 10000
-  },
-  {
-    "title": "3 Para Monitor (Korean)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/3_para_monitor_korean.glb",
-    "category": "monitoring",
-    "price": 10000
-  },
-  {
-    "title": "3 Para Monitor (Chinese)",
-    "description": "",
-    "displayType": "3d",
-    "glb": "images/3_para_monitor_chinese.glb",
-    "category": "monitoring",
-    "price": 10000
+    "price": 10000,
+    "variants": [
+      "3 Para Monitor (Korean)",
+      "3 Para Monitor (Chinese)",
+      "5 Para Monitor (Korean)",
+      "5 Para Monitor (Chinese)",
+      "7 Para Monitor",
+      "Multi Para Monitor (Indian)"
+    ]
   },
   {
     "title": "SpO2 Monitor Probe",
     "description": "",
     "displayType": "image",
-    "image": "images/spo2_monitor_probe.jpg",
+    "image": "Product_Images/88_SpO2_Monitor_Probe.png",
     "category": "monitoring",
     "price": 10000
   },
@@ -901,47 +711,29 @@
     "title": "NIBP Cuff and Tubing",
     "description": "",
     "displayType": "image",
-    "image": "images/nibp_cuff_and_tubing.jpg",
+    "image": "Product_Images/89_NIBP_Cuff_Tubing.png",
     "category": "monitoring",
     "price": 10000
   },
   {
-    "title": "Suction Machine (Half HP)",
-    "description": "",
+    "title": "Suction Machine",
+    "description": "Reliable suction machines available in multiple configurations for different needs including hospital, ambulance, and noiseless use.",
     "displayType": "image",
-    "image": "images/suction_machine_half_hp.jpg",
+    "image": "Product_Images/90_Suction_Machine.png",
     "category": "surgical",
-    "price": 10000
-  },
-  {
-    "title": "Suction Machine (1 HP)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/suction_machine_1_hp.jpg",
-    "category": "surgical",
-    "price": 10000
-  },
-  {
-    "title": "Suction Machine (Ambulance)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/suction_machine_ambulance.jpg",
-    "category": "surgical",
-    "price": 10000
-  },
-  {
-    "title": "Suction Machine (Noiseless)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/suction_machine_noiseless.jpg",
-    "category": "surgical",
+    "variants": [
+      "Suction Machine (Half HP)",
+      "Suction Machine (1 HP)",
+      "Suction Machine (Ambulance)",
+      "Suction Machine (Noiseless)"
+    ],
     "price": 10000
   },
   {
     "title": "Infusion Pump",
     "description": "",
     "displayType": "image",
-    "image": "images/infusion_pump.jpg",
+    "image": "Product_Images/91_Infusion_Pump.png",
     "category": "monitoring",
     "price": 10000
   },
@@ -949,39 +741,32 @@
     "title": "Syringe Pump",
     "description": "",
     "displayType": "image",
-    "image": "images/syringe_pump.jpg",
+    "image": "Product_Images/92_Syringe_Pump.png",
     "category": "monitoring",
     "price": 10000
   },
   {
-    "title": "Defibrillator (Korean)",
-    "description": "",
+    "title": "Defibrillator",
+    "description": "High-performance defibrillators available in multiple trusted brands for critical emergency response.",
     "displayType": "image",
-    "image": "images/defibrillator_korean.jpg",
+    "image": "Product_Images/93_Defibrillator.png",
     "category": "monitoring",
-    "price": 10000
-  },
-  {
-    "title": "Defibrillator (Philips)",
-    "description": "",
-    "displayType": "image",
-    "image": "images/defibrillator_philips.jpg",
-    "category": "monitoring",
+    "variants": ["Defibrillator (Korean)", "Defibrillator (Philips)"],
     "price": 10000
   },
   {
     "title": "Baby Warmer (Double Surface)",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/baby_warmer_double_surface.glb",
+    "displayType": "image",
+    "image": "Product_Images/94_baby_warmer.png",
     "category": "neonatal",
     "price": 10000
   },
   {
     "title": "Baby Warmer with Phototherapy",
     "description": "",
-    "displayType": "3d",
-    "glb": "images/baby_warmer_with_phototherapy.glb",
+    "displayType": "image",
+    "image": "Product_Images/95_Baby_Warmer_with_Phototherapy.png",
     "category": "neonatal",
     "price": 10000
   }

@@ -795,6 +795,15 @@ if (p.sizes) {
         ${mediaContent}
         <h3>${p.title}</h3>
         <p>${p.description}</p>
+
+  ${p.variants ? `
+  <select class="variant-dropdown">
+    <option disabled selected>Select Variant</option>
+    ${p.variants.map(v => `<option value="${v}">${v}</option>`).join('')}
+  </select>
+` : ''}
+
+
         <div class="button-container">
   <button class="view-details">View Details</button>
 </div>
