@@ -26,6 +26,8 @@
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 +
   </head>
+  <base href="/usha-healthcare/">
+
   <body>
     <!-- Header -->
     <header class="header">
@@ -779,15 +781,19 @@ const filtered = result.map(r => r.item);
 
 if (p.sizes) {
   mediaContent = `
-    <img src="${p.image}" class="variant-image" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px" />
-    <select class="variant-dropdown" style="margin-top: 10px; padding: 6px; width: 100%; border-radius: 6px;">
-      ${p.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
-    </select>
-  `;
+  <div class="image-container">
+    <img src="${p.image}" alt="${p.title}" />
+  </div>
+  <select class="variant-dropdown" style="margin-top: 10px; padding: 6px; width: 100%; border-radius: 6px;">
+    ${p.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
+  </select>
+`;
+
 } else {
   mediaContent = p.displayType === "model"
     ? `<model-viewer src="${p.glb}" auto-rotate camera-controls disable-pan disable-zoom style="width: 100%; height: 250px; border-radius: 10px"></model-viewer>`
-    : `<img src="${p.image}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px" />`;
+    : `<div class="image-container"><img src="${p.image}" alt="${p.title}" /></div>`;
+
 }
 
 
