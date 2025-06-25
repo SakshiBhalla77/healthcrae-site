@@ -4,6 +4,7 @@ function performSearch(searchTerm) {
   if (!searchTerm) return;
 
   localStorage.setItem("searchQuery", searchTerm);
+  showLoader(); // 👈 Show loader when search starts
   window.location.href = "products.html"; // redirect to product listing
 }
 
@@ -24,4 +25,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  hideLoader();
 });

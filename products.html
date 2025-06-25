@@ -781,45 +781,41 @@ const filtered = result.map(r => r.item);
 
       let mediaContent = "";
 
-if (p.sizes) {
-  mediaContent = `
-  <div class="image-container">
-    <img src="${p.image}" alt="${p.title}" />
-  </div>
-  <select class="variant-dropdown" style="margin-top: 10px; padding: 6px; width: 100%; border-radius: 6px;">
-    ${p.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
-  </select>
-`;
-
-} else {
-  mediaContent = p.displayType === "model"
-    ? `<model-viewer src="${p.glb}" auto-rotate camera-controls disable-pan disable-zoom style="width: 100%; height: 250px; border-radius: 10px"></model-viewer>`
-    : `<div class="image-container"><img src="${p.image}" alt="${p.title}" /></div>`;
-
-}
-
+      if (p.sizes) {
+        mediaContent = `
+        <div class="image-container">
+          <img src="${p.image}" alt="${p.title}" />
+        </div>
+        <select class="variant-dropdown" style="margin-top: 10px; padding: 6px; width: 100%; border-radius: 6px;">
+          ${p.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
+        </select>
+        `;
+      } else {
+        mediaContent = p.displayType === "model"
+          ? `<model-viewer src="${p.glb}" auto-rotate camera-controls disable-pan disable-zoom style="width: 100%; height: 250px; border-radius: 10px"></model-viewer>`
+          : `<div class="image-container"><img src="${p.image}" alt="${p.title}" /></div>`;
+      }
 
       card.innerHTML = `
         ${mediaContent}
         <h3>${p.title}</h3>
         <p>${p.description}</p>
-
-  ${p.variants ? `
-  <select class="variant-dropdown">
-    <option disabled selected>Select Variant</option>
-    ${p.variants.map(v => `<option value="${v}">${v}</option>`).join('')}
-  </select>
-` : ''}
-
-
+        ${p.variants ? `
+        <select class="variant-dropdown">
+          <option disabled selected>Select Variant</option>
+          ${p.variants.map(v => `<option value="${v}">${v}</option>`).join('')}
+        </select>
+        ` : ''}
         <div class="button-container">
-  <button class="view-details">View Details</button>
-</div>
-
+          <button class="view-details">View Details</button>
+        </div>
       `;
 
       grid.appendChild(card);
     });
+
+    // 👇 Add this at the end of renderProducts
+    waitForImagesToLoad(grid);
   }
 
   // Apply filter logic
@@ -838,6 +834,56 @@ if (p.sizes) {
 
 
 <script src="search.js"></script>
+
+
+
+<div id="global-loader" class="loader-overlay">
+  <div class="spinner"></div>
+</div>
+
+<script>
+  function showLoader() {
+    document.getElementById("global-loader").style.display = "flex";
+  }
+
+  function hideLoader() {
+    document.getElementById("global-loader").style.display = "none";
+  }
+</script>
+
+<script>
+  function waitForImagesToLoad(container) {
+    const images = container.querySelectorAll("img");
+    let loadedImages = 0;
+
+    if (images.length === 0) {
+      hideLoader();
+      return;
+    }
+
+    images.forEach((img) => {
+      if (img.complete) {
+        loadedImages++;
+      } else {
+        img.addEventListener("load", () => {
+          loadedImages++;
+          if (loadedImages === images.length) {
+            hideLoader();
+          }
+        });
+        img.addEventListener("error", () => {
+          loadedImages++;
+          if (loadedImages === images.length) {
+            hideLoader();
+          }
+        });
+      }
+    });
+
+    setTimeout(() => hideLoader(), 10000); // fallback
+  }
+</script>
+
 
 
   </body>

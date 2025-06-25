@@ -964,8 +964,47 @@ if (storedSearch && searchInput) {
 <script src="search.js"></script>
 
 
+<div id="global-loader" class="loader-overlay">
+  <div class="spinner"></div>
+</div>
+
+<script>
+  function showLoader() {
+    document.getElementById("global-loader").style.display = "flex";
+  }
+
+  function hideLoader() {
+    document.getElementById("global-loader").style.display = "none";
+  }
+</script>
+
 
   
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const models = document.querySelectorAll("model-viewer");
+    let loadedCount = 0;
+
+    if (models.length === 0) {
+      hideLoader(); // no models to wait for
+      return;
+    }
+
+    showLoader(); // show while loading models
+
+    models.forEach((model) => {
+      model.addEventListener("load", () => {
+        loadedCount++;
+        if (loadedCount === models.length) {
+          hideLoader(); // all models loaded
+        }
+      });
+    });
+
+    // Fallback in case some model never loads
+    setTimeout(() => hideLoader(), 10000);
+  });
+</script>
 
 
   </body>
