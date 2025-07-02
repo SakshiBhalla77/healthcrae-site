@@ -127,17 +127,120 @@
     </header>
 
      <!-- Hero Welcome Section -->
+<!-- Hero Welcome Section -->
 <section class="hero-welcome">
-  <h1>Welcome to Usha Traders</h1>
+  <h1>Welcome to Usha Healthcare</h1>
   <p>
-    Since March 2005, Usha Traders has been a trusted name in the manufacturing and trading of anaesthesia machine delivery systems. We are committed to delivering the highest level of patient safety and have built a strong reputation for dependable products and services.
+    Since March 2005, UshaHealthcare has been a trusted name in the
+    manufacturing and trading of anaesthesia machine delivery systems. We are
+    committed to delivering the highest level of patient safety and have built a
+    strong reputation for dependable products and services.
   </p>
   <p>
-    At Usha Traders, we believe that the standard of patient care must never be compromised by the reliability of medical equipment. That’s why we design, develop, and market a wide range of high-quality medical devices for nursing homes and hospitals across the country.
+    At Usha Healthcare, we believe that the standard of patient care must never be
+    compromised by the reliability of medical equipment. That’s why we design,
+    develop, and market a wide range of high-quality medical devices for
+    nursing homes and hospitals across the country.
   </p>
   <p>
-    People across India trust our innovative solutions for superior protection and consistent performance in critical healthcare environments.
+    People across India trust our innovative solutions for superior protection
+    and consistent performance in critical healthcare environments.
   </p>
+</section>
+
+<section class="trust-heading">
+  <h2>Trusted by Leading Healthcare Providers</h2>
+</section>
+
+<section class="company-logos">
+  </section>
+
+<!-- Company Logos Carousel Section -->
+<section class="company-logos">
+  <div class="logos-container">
+
+    <div class="logo">
+      <img src="Logos/Life_healthcare.jpg" alt="Life Healthcare Hospital">
+    </div>
+
+      <div class="logo">
+      <img src="Logos/Philips.jpg" alt="Philips">
+    </div>
+
+    <div class="logo">
+      <img src="Logos/Rg.jpg" alt="RG Scientific Enterprises Pvt. Ltd.">
+    </div>
+    <div class="logo">
+      <img src="Logos/CMC.jpg" alt="CMC Hospital">
+    </div>
+
+    <div class="logo">
+      <img src="Logos/Maheshwari.jpg" alt="Maheshwari Hospital">
+    </div>
+        <div class="logo">
+      <img src="Logos/CMI_Hospital.jpg" alt="CMI Hospital">
+    </div>
+    <div class="logo">
+      <img src="Logos/Cribs_Hospital.jpg" alt="Cribs Hospital">
+    </div>
+    <div class="logo">
+      <img src="Logos/aprayema.jpg" alt="Aprameya Engineering Limited">
+    </div>
+
+    <div class="logo">
+      <img src="Logos/Kumar_hospi.jpg" alt="Kumar Hospital">
+    </div>
+
+   <div class="logo">
+      <img src="Logos/orthocare.jpg" alt="Ortho Care Hospital">
+    </div>
+    <div class="logo">
+      <img src="Logos/rg_stone.jpg" alt="RG Stone Urology & Laparoscopy Hospital">
+    </div>
+
+    <div class="logo">
+      <img src="Logos/maharaja_agarsan.jpg" alt="Maharaja Agarsain Hospital">
+    </div>
+    <div class="logo">
+      <img src="Logos/santom .jpg" alt="Santom Hospital">
+    </div>
+   
+
+    <div class="logo">
+      <img src="Logos/airmid.jpg" alt="Airmid Hospital">
+    </div>
+      
+    <div class="logo">
+      <img src="Logos/sunetra.jpg"Sunetra Super Speciality Eye Care Centre">
+    </div>
+ 
+        <div class="logo">
+      <img src="Logos/dcwa.jpg" alt="DCWA Medical Center">
+    </div>
+    <div class="logo">
+      <img src="Logos/ghai.jpg" alt="Ghai Hospital">
+    </div>
+   
+    <div class="logo">
+      <img src="Logos/hope_hospital.jpg" alt="THE HOPE HOSPITAL">
+    </div>
+        <div class="logo">
+      <img src="Logos/satya.jpg" alt="Satya Skin & Hair Care Private Limited">
+    </div>
+  
+    <div class="logo">
+      <img src="Logos/Versamed.jpg" alt="Versamed">
+    </div>
+        <div class="logo">
+      <img src="Logos/dragger.jpg" alt="Drager">
+    </div>
+
+        
+    <div class="logo">
+      <img src="Logos/zaocare.jpg" alt="ZAO Care Technologies">
+    </div>
+
+  </div>
 </section>
 
 
@@ -965,8 +1068,14 @@ if (storedSearch && searchInput) {
 
 
 <div id="global-loader" class="loader-overlay">
-  <div class="spinner"></div>
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </div>
+
 
 <script>
   function showLoader() {
@@ -1004,6 +1113,11 @@ if (storedSearch && searchInput) {
     // Fallback in case some model never loads
     setTimeout(() => hideLoader(), 10000);
   });
+</script>
+<script>
+  const container = document.querySelector(".logos-container");
+  const logos = container.innerHTML;
+  container.innerHTML += logos; // only duplicate the logos, not the container
 </script>
 
 

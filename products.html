@@ -28,43 +28,29 @@
 
       <style>
         /* Contact Popup Styling - Themed */
-        .contact-popup {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: var(--bg-tertiary);
-          /* Use theme's background color */
-          padding: 25px;
-          border-radius: 12px;
-          box-shadow: var(--card-shadow);
-          /* Use theme's shadow */
-          z-index: 1001;
-          text-align: center;
-          width: auto;
-          max-width: 400px;
-          font-family: 'Open Sans', 'Segoe UI', sans-serif;
-          /* Consistent font */
-          color: var(--text-primary);
-          transition: background-color 0.3s ease, color 0.3s ease;
-          /* Theme transition */
+        :root {
+          --text-primary: #333333;
+          --navy-blue: #3d77b5;
+          /* Navy blue for all interactive elements */
+          --navy-blue-hover: #0b2b4f;
+          /* Darker navy blue for hover states */
         }
       
-        .contact-popup a {
-          display: block;
-          margin-bottom: 15px;
-          color: var(--navy-blue);
-          text-decoration: none;
-          font-weight: 600;
-          transition: color 0.3s ease;
+        .popup-content-flex-new {
+          position: relative;
+          margin-bottom: 25px;
         }
       
-        .contact-popup a:hover {
-          color: var(--navy-blue-hover);
-          /* Darker hover color */
+        .popup-image-small {
+          float: right;
+          width: 200px;
+          height: 200px;
+          margin: 0 0 15px 15px;
+          border-radius: 8px;
+          overflow: hidden;
         }
       
-        .contact-popup button {
+        .contact-popup .contact-close-button {
           padding: 12px 22px;
           border-radius: 25px;
           font-weight: 600;
@@ -80,12 +66,132 @@
           font-size: 1rem;
         }
       
-        .contact-popup button:hover {
-          background-color: var(--navy-blue-hover);
-          transform: scale(1.05);
+        .close-popup {
+          position: absolute;
+          top: 15px;
+          right: 20px;
+          font-size: 36px;
+          /* Increased from 28px */
+          font-weight: bold;
+          color: var(--text-secondary);
+          cursor: pointer;
+          transition: color 0.2s;
+          width: 40px;
+          /*set a with to allow easy clicking here*/
+          height: 40px;
+          /*set a height to allow easy clicking here*/
+          display: flex;
+          /*centers cross horixontally*/
+          justify-content: center;
+          /*centers cross horixontally*/
+          align-items: center;
+          /*centers vertically*/
+        }
+      
+        .popup-details-full {
+          overflow: hidden;
+        }
+      
+        /* Contact Popup Styling - Themed */
+        .contact-popup {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          /* Use theme's background color */
+          padding: 25px;
+          border-radius: 12px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          /* Use theme's shadow */
+          z-index: 1001;
+          text-align: center;
+          width: auto;
+          max-width: 400px;
+          font-family: 'Open Sans', 'Segoe UI', sans-serif;
+          /* Consistent font */
+          color: var(--text-primary);
+          transition: background-color 0.3s ease, color 0.3s ease;
+          /* Theme transition */
+        }
+      
+        .contact-popup a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
+          color: var(--navy-blue);
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s ease;
+          padding: 12px 22px;
+          border-radius: 25px;
+          /* border:2px solid; */
+          border: none;
+          /* Removed the border */
+          background-color: #f0f0f0;
+          /* Light background for better look */
+        }
+      
+        .contact-popup a:hover {
+          /* background-color: var(--navy-blue-hover); */
+          /* Darker hover color */
+          background-color: #ddd;
+          /* A slightly darker grey */
+        }
+      
+        /* Style Font Awesome icons within contact links */
+        .contact-popup a i {
+          margin-right: 8px;
+          /* space between icon and text */
+          font-size: 1.2rem;
+          /* adjust icon size as per preference */
+        }
+      
+        /* Style the container */
+        .catalogue-card {
+          position: relative;
+          display: flex;
+          width: 300px;
+          /* or whatever width you want */
+          margin: 0 auto;
+          /* centers the card */
+          padding: 15px;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+      
+        /* Style the contact links */
+        .contact-link {
+          display: inline-flex;
+          /* Set inline style for each one
+        adjust to what is present*/
+          margin-bottom: 8px;
+          padding: 8px 12px;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+          text-decoration: none;
+        }
+      
+        /* Icon color customization */
+        a.contact-link>i {
+          color: #25D366;
+          /*whatsapp */
+        }
+      
+        /* adjust the color to brands requirement */
+        a.contact-link:last-child>i {
+          color: #ea4335;
+          /*email icon color*/
+        }
+      
+        /* Better hover interactions */
+        .contact-link>a:hover {
+          transform: translateY(-2px);
+          /* A subtle movement upwards on hover */
         }
       </style>
-
 
 +
   </head>
@@ -961,9 +1067,10 @@ document.addEventListener("click", function(event) {
     popupContainer.style.display = "flex";
     document.body.style.overflow = "hidden";
     document.querySelector(".contact-us-button").addEventListener("click", () => {
-      console.log("Contact Us clicked. Title:", title);
-      const whatsappMessage = `Hey, I want to enquire about ${title}`;
-      console.log("Whatsapp Message:", whatsappMessage);
+    console.log("Contact Us clicked. Title:", title);
+    // const whatsappMessage = `Hey, I want to enquire about ${title}`; // original
+    const whatsappMessage =` `; // changed to remove text.
+    console.log("Whatsapp Message:", whatsappMessage);
       // Create the contact popup
       const contactPopup = document.createElement('div');
       contactPopup.classList.add('contact-popup');
@@ -986,7 +1093,7 @@ document.addEventListener("click", function(event) {
 
       whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodedWhatsappMessage}`; // URL to open WhatsApp chat
 
-      whatsappLink.textContent = 'WhatsApp: +91-9810545292';
+      whatsappLink.innerHTML = '<i class="fab fa-whatsapp"></i> WhatsApp: +91-9810545292';
 
       whatsappLink.style.display = 'block';
 
@@ -999,11 +1106,12 @@ document.addEventListener("click", function(event) {
       emailLink.href = `mailto:${emailAddress}`;
       
       // URL to open default mail client
-      emailLink.textContent = 'Email: kushwahamanoj72@gmail.com';
+      emailLink.innerHTML = '<i class="fas fa-envelope"></i> Email: kushwahamanoj72@gmail.com';
       emailLink.style.display = 'block';
 
       // Close Button
       const closeButton = document.createElement('button');
+      closeButton.classList.add("contact-close-button");
       closeButton.textContent = 'Close';
       closeButton.style.marginTop = '10px';
       closeButton.addEventListener('click', () => {
@@ -1046,7 +1154,12 @@ document.addEventListener("click", function(event) {
 
 
 <div id="global-loader" class="loader-overlay">
-  <div class="spinner"></div>
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </div>
 
 <script>

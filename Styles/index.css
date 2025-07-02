@@ -1,5 +1,10 @@
 /* Base Styles */
 :root {
+  --welcome-bg: linear-gradient(
+    to bottom,
+    #f4f8fb,
+    #dbe9f7
+  ); /* Define background */
   /* Light theme variables - simplified color palette */
   --bg-primary: #e6e5e5; /* Nearly white background */
   --bg-secondary: #e6e5e5; /* Slightly off-white background */
@@ -12,6 +17,56 @@
   --shadow: rgba(0, 0, 0, 0.06);
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   --border-color: #e6e6e6;
+}
+
+.trust-heading {
+  text-align: center;
+  padding: 20px 10px 0px 10px; /* Reduced bottom padding */
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.company-logos {
+  padding: 5px 0.9rem 1rem 1rem; /* Reduced top padding */
+  text-align: center;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+.logo:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  flex-shrink: 0;
+
+  animation: slideLogos 20s linear infinite;
+
+  width: 200px; /* Fixed logo container size */
+  text-align: center;
+  margin-right: 4px;
+  box-sizing: border-box; /* Include padding */
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 90px; /* Adjusted for cleanliness */
+  vertical-align: middle;
+}
+
+.logos-container {
+  display: flex;
+  width: max-content;
+  animation: cleanSlide 70s linear infinite;
+}
+
+@keyframes cleanSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 [data-theme="dark"] {
@@ -28,6 +83,7 @@
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   --border-color: #444;
 }
+
 .hero-welcome {
   background: linear-gradient(to bottom, #f4f8fb, #dbe9f7);
   padding: 4rem 2rem 3rem;
@@ -1167,20 +1223,58 @@ p {
   display: none; /* Hidden by default */
 }
 
-.spinner {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid var(--navy-blue);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 0.8s linear infinite;
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
-
-@keyframes spin {
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--navy-blue); /* Brand color */
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
   0% {
-    transform: rotate(0deg);
+    transform: scale(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(24px);
   }
 }
