@@ -26,6 +26,66 @@
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <!-- Move this line UP inside <head> -->
 
+      <style>
+        /* Contact Popup Styling - Themed */
+        .contact-popup {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: var(--bg-tertiary);
+          /* Use theme's background color */
+          padding: 25px;
+          border-radius: 12px;
+          box-shadow: var(--card-shadow);
+          /* Use theme's shadow */
+          z-index: 1001;
+          text-align: center;
+          width: auto;
+          max-width: 400px;
+          font-family: 'Open Sans', 'Segoe UI', sans-serif;
+          /* Consistent font */
+          color: var(--text-primary);
+          transition: background-color 0.3s ease, color 0.3s ease;
+          /* Theme transition */
+        }
+      
+        .contact-popup a {
+          display: block;
+          margin-bottom: 15px;
+          color: var(--navy-blue);
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s ease;
+        }
+      
+        .contact-popup a:hover {
+          color: var(--navy-blue-hover);
+          /* Darker hover color */
+        }
+      
+        .contact-popup button {
+          padding: 12px 22px;
+          border-radius: 25px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          background-color: var(--navy-blue);
+          color: white;
+          border: none;
+          font-size: 1rem;
+        }
+      
+        .contact-popup button:hover {
+          background-color: var(--navy-blue-hover);
+          transform: scale(1.05);
+        }
+      </style>
+
 
 +
   </head>
@@ -600,7 +660,7 @@
                 });
             } else {
               console.error("Product not found:", productTitle);
-              alert("Product details not available. Please try again.");
+              //alert("Product details not available. Please try again.");
             }
           });
         });
@@ -802,7 +862,7 @@ if (p.sizes) {
       card.innerHTML = `
         ${mediaContent}
         <h3>${p.title}</h3>
-        <p>${p.description}</p>
+    
 
   ${p.variants ? `
   <select class="variant-dropdown">
@@ -820,7 +880,150 @@ if (p.sizes) {
 
       grid.appendChild(card);
     });
+
+    function renderProducts(products) {
+  const grid = document.getElementById("dynamic-catalogue-grid");
+  grid.innerHTML = "";
+
+  products.forEach((p) => {
+    const card = document.createElement("div");
+    card.className = "catalogue-card";
+
+    let mediaContent = "";
+    if (p.sizes) {
+      mediaContent = `
+        <div class="image-container">
+          <img src="${p.image}" alt="${p.title}" />
+        </div>
+        <select class="variant-dropdown" style="margin-top: 10px; padding: 6px; width: 100%; border-radius: 6px;">
+          ${p.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
+        </select>
+      `;
+    } else {
+      mediaContent = p.displayType === "model"
+        ? `<model-viewer src="${p.glb}" auto-rotate camera-controls disable-pan disable-zoom style="width: 100%; height: 250px; border-radius: 10px"></model-viewer>`
+        : `<div class="image-container"><img src="${p.image}" alt="${p.title}" /></div>`;
+    }
+
+    card.innerHTML = `
+      ${mediaContent}
+      <h3>${p.title}</h3>
+      <p>${p.description}</p>
+      ${p.variants ? `
+        <select class="variant-dropdown">
+          <option disabled selected>Select Variant</option>
+          ${p.variants.map(v => `<option value="${v}">${v}</option>`).join('')}
+        </select>
+      ` : ''}
+      <div class="button-container">
+        <button class="view-details">View Details</button>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+}
+
+// ✅ Paste the popup handler here (AFTER renderProducts, BEFORE filters)
+document.addEventListener("click", function(event) {
+  if (event.target.classList.contains("view-details")) {
+    const card = event.target.closest(".catalogue-card");
+    const title = card.querySelector("h3").textContent;
+    console.log("View Details clicked. Title:", title);
+    const whatsappNumber = '+919810545292';
+    const emailAddress = 'kushwahamanoj72@gmail.com';
+    // Find the product in allProducts using the title
+    const product = allProducts.find((p) => p.title === title);
+
+    if (!product) {
+      console.log("Product not found!");
+      return;
+    }
+
+    const description = product.description;
+    const image = card.querySelector("img")?.src || "";
+    const popupHTML = `
+      <h2>${title}</h2>
+      <div class="popup-content-flex-new">
+        <div class="popup-image-small">
+          <img src="${image}" alt="${title}" style="width: 100%; height: 100%; border-radius: 8px;" />
+        </div>
+        <div class="popup-details-full">
+          <p class="popup-description">${description}</p>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button class="contact-us-button"><i class="fas fa-envelope"></i> Contact Us</button>
+        <button class="download-specs"><i class="fas fa-download"></i> Download Specifications</button>
+      </div>
+    `;
+    popupContent.innerHTML = popupHTML;
+    popupContainer.style.display = "flex";
+    document.body.style.overflow = "hidden";
+    document.querySelector(".contact-us-button").addEventListener("click", () => {
+      console.log("Contact Us clicked. Title:", title);
+      const whatsappMessage = `Hey, I want to enquire about ${title}`;
+      console.log("Whatsapp Message:", whatsappMessage);
+      // Create the contact popup
+      const contactPopup = document.createElement('div');
+      contactPopup.classList.add('contact-popup');
+      contactPopup.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1001; /* Ensure it's on top */
+        text-align: center;
+      `;
+      // WhatsApp Link with pre-filled message
+      const encodedWhatsappMessage = encodeURIComponent(whatsappMessage);
+
+      const whatsappLink = document.createElement('a');
+
+      whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodedWhatsappMessage}`; // URL to open WhatsApp chat
+
+      whatsappLink.textContent = 'WhatsApp: +91-9810545292';
+
+      whatsappLink.style.display = 'block';
+
+      whatsappLink.style.marginBottom = '10px';
+
+      // Email Link
+      const emailAddress = 'kushwahamanoj72@gmail.com';
+      //Replace with the clients desired email
+      const emailLink = document.createElement('a');
+      emailLink.href = `mailto:${emailAddress}`;
+      
+      // URL to open default mail client
+      emailLink.textContent = 'Email: kushwahamanoj72@gmail.com';
+      emailLink.style.display = 'block';
+
+      // Close Button
+      const closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.marginTop = '10px';
+      closeButton.addEventListener('click', () => {
+        document.body.removeChild(contactPopup); // Remove the popup
+      });
+
+      // Append Elements
+      contactPopup.appendChild(whatsappLink);
+      contactPopup.appendChild(emailLink);
+      contactPopup.appendChild(closeButton);
+      document.body.appendChild(contactPopup); // Add popup to the DOM
+    });
+
+    document.querySelector(".download-specs").addEventListener("click", () => {
+      alert("Preparing download...");
+    });
   }
+});
+  }
+  
 
   // Apply filter logic
   document.getElementById("applyFilters").addEventListener("click", () => {
@@ -831,6 +1034,7 @@ if (p.sizes) {
 
 
     renderProducts(filteredProducts);
+    
   });
 </script>
 
