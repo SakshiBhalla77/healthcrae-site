@@ -18,6 +18,9 @@
   color: var(--text-primary);
 }
 
+
+
+
 /* Flex layout: sidebar + grid */
 .layout-wrapper {
   display: flex;

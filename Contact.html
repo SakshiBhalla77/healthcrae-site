@@ -30,29 +30,10 @@
 
         <!-- Main Navigation -->
         <nav class="main-nav">
-          <a href="index.html">Home</a>
-          <div class="dropdown">
-            <a href="products.html" class="dropbtn">
-              <span class="dropdown-text">Products</span>
-              <i class="fas fa-caret-down dropdown-icon"></i>
-            </a>
-            
-            
-            <div class="dropdown-content">
-              <a href="#">Anaesthesia Work Station</a>
-              <a href="#">Anaesthesia Basic Machine</a>
-              <a href="#">Anaesthesia Ventilator</a>
-              <a href="#">Anaesthesia Vaporizer</a>
-              <a href="#">OT Table</a>
-              <a href="#">OT Led Light</a>
-              <a href="#">Medical Oxygen Gas Delivery System</a>
-              <a href="#">Patient Ambulance</a>
-              <a href="#">Autoclave Sterilization</a>
-            </div>
-          </div>
-          </a>
+          <a href="index.html" class="active">Home</a>
+          <a href="products.html">Products</a>
           <a href="Resources/catalogue_15.pdf" target="_blank">Catalog</a>
-          <a href="contact.html" class="active">Contact</a>
+          <a href="Contact.html">Contact</a>
         </nav>
       </div>
 
@@ -67,36 +48,36 @@
       <!-- Right - Icons -->
       <div class="header-right">
         <!-- Dark Mode Toggle -->
-        <div class="header-icon theme-toggle">
+        <!-- <div class="header-icon theme-toggle">
           <i class="fas fa-moon"></i>
           <span class="icon-label">Theme</span>
-        </div>
+        </div> -->
 
         <!-- Help Icon -->
-        <div class="header-icon">
+        <!-- <div class="header-icon">
           <i class="fas fa-headset"></i>
           <span class="icon-label">Help</span>
-        </div>
+        </div> -->
 
         <!-- Profile Icon -->
-        <div class="header-icon profile-icon">
+        <!-- <div class="header-icon profile-icon">
           <i class="fas fa-user"></i>
-          <span class="icon-label">Account</span>
-          <!-- Profile Dropdown -->
-          <div class="profile-dropdown">
+          <span class="icon-label">Account</span> -->
+        <!-- Profile Dropdown -->
+        <!-- <div class="profile-dropdown">
             <a href="#"><i class="fas fa-user"></i> My Profile</a>
             <a href="#"><i class="fas fa-file-alt"></i> Orders</a>
             <a href="#"><i class="fas fa-cog"></i> Settings</a>
             <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
           </div>
-        </div>
+        </div> -->
 
         <!-- Cart Icon -->
-        <div class="header-icon">
+        <!-- <div class="header-icon">
           <i class="fas fa-shopping-cart"></i>
           <span class="icon-label">Cart</span>
           <span class="cart-count">0</span>
-        </div>
+        </div> -->
 
         <!-- Mobile hamburger menu -->
         <div class="mobile-menu-toggle">
@@ -108,9 +89,11 @@
     <!-- Mobile Navigation Menu (hidden by default, shows on small screens) -->
     <div class="mobile-nav">
       <a href="index.html"><i class="fas fa-home"></i> Home</a>
-     
+
       <a href="products.html"><i class="fas fa-box"></i> Products</a>
-      <a href="Resources/catalogue_15.pdf" target="_blank"><i class="fas fa-file-download"></i> Catalog</a>
+      <a href="Resources/catalogue_15.pdf" target="_blank"
+        ><i class="fas fa-file-download"></i> Catalog</a
+      >
 
       <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
     </div>
@@ -119,15 +102,23 @@
       <!-- Left: Contact Form -->
       <div class="contact-form">
         <h2>Contact Form</h2>
-        <form>
+        <form
+          action="https://formsubmit.co/karanworks4@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Submission"
+          />
+
           <label>Your Name*</label>
           <input type="text" name="name" required />
 
           <label>E-Mail*</label>
           <input type="email" name="email" required />
-
-          <label>Website</label>
-          <input type="text" name="website" />
 
           <label>Your Message*</label>
           <textarea name="message" rows="5" required></textarea>
@@ -148,8 +139,7 @@
           851-007-3739, 011-553-38100
         </p>
         <p>
-          Email: <a href="mailto:info@ushatraders.com">info@ushatraders.com</a
-          ><br />
+          Email: <a href="mailto:info@usha.com">info@ushatraders.com</a><br />
           <a href="mailto:kushwahamanoj72@gmail.com"
             >kushwahamanoj72@gmail.com</a
           ><br />
@@ -161,12 +151,14 @@
 
         <h3>Find the Address</h3>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.432907971487!2d77.15048225!3d28.7559279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQ1JzIxLjMiTiA3N8KwMDgnMjMuOCJF!5e0!3m2!1sen!2sin!4v1717836000000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2017.249007761621!2d77.20175369593223!3d28.742457885232884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfe23647e0cc1%3A0xb390d343a57e22e3!2sBlock%20A%2C%20A3243%2C%20Block%20A%2C%20Baba%20Colony%2C%20Burari%2C%20New%20Delhi%2C%20Delhi%2C%20110084!5e0!3m2!1sen!2sin!4v1751815866347!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+        ></iframe>
       </div>
     </div>
 
