@@ -1178,6 +1178,33 @@ p {
     width: 100%;
   }
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.whatsapp-button img {
+  width: 80px;
+  height: 80px;
+}
+
+.wp-text {
+  margin-top: 2px;
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
+  text-align: center;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
 /* Hidden by default */
 .mobile-nav {
   display: none;

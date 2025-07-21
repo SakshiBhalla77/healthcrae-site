@@ -138,13 +138,13 @@
     <!-- Company Logos Carousel Section -->
     <section class="company-logos">
       <div class="logos-container">
-        <div class="logo">
+        <!-- <div class="logo">
           <img src="Logos/Life_healthcare.jpg" alt="Life Healthcare Hospital" />
         </div>
 
         <div class="logo">
           <img src="Logos/Philips.jpg" alt="Philips" />
-        </div>
+        </div> -->
 
         <div class="logo">
           <img src="Logos/Rg.jpg" alt="RG Scientific Enterprises Pvt. Ltd." />
@@ -215,7 +215,7 @@
           />
         </div>
 
-        <div class="logo">
+        <!-- <div class="logo">
           <img src="Logos/Versamed.jpg" alt="Versamed" />
         </div>
         <div class="logo">
@@ -224,7 +224,7 @@
 
         <div class="logo">
           <img src="Logos/zaocare.jpg" alt="ZAO Care Technologies" />
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -251,6 +251,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/anesthesia-cart.glb"
+            loading="lazy"
             alt="Anesthesia Cart 3D Model"
             camera-controls
             disable-zoom
@@ -275,6 +276,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/anesthesia-machine.glb"
+            loading="lazy"
             alt="Anesthesia Machine 3D Model"
             camera-controls
             disable-zoom
@@ -298,7 +300,8 @@
         <!-- Product 3: Operation Theatre Light -->
         <div class="catalogue-card">
           <model-viewer
-            src="images/OT light.glb"
+            src="images/OT_light.glb"
+            loading="lazy"
             alt="Operation Theatre Light 3D Model"
             camera-controls
             disable-zoom
@@ -322,6 +325,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/icubed.glb"
+            loading="lazy"
             alt="ICU Bed 3D Model"
             camera-controls
             disable-zoom
@@ -346,6 +350,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/Steam Sterilizer.glb"
+            loading="lazy"
             alt="Steam Sterilizer 3D Model"
             camera-controls
             disable-zoom
@@ -370,6 +375,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/Endoscopic_stand.glb"
+            loading="lazy"
             alt="Endoscopic Stand 3D Model"
             camera-controls
             disable-zoom
@@ -394,6 +400,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/Anesthesia_vaporiser.glb"
+            loading="lazy"
             alt="Endoscopic Stand 3D Model"
             camera-controls
             disable-zoom
@@ -414,6 +421,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/Dialysis_bed.glb"
+            loading="lazy"
             alt="Endoscopic Stand 3D Model"
             camera-controls
             disable-zoom
@@ -438,6 +446,7 @@
         <div class="catalogue-card">
           <model-viewer
             src="images/Patient_monitor.glb"
+            loading="lazy"
             alt="Endoscopic Stand 3D Model"
             camera-controls
             disable-zoom
@@ -449,6 +458,7 @@
             camera-orbit="90deg 90deg auto"
             style="width: 100%; height: 250px; border-radius: 10px"
           ></model-viewer>
+
           <h3>CMS8000 Patient Monitor</h3>
           <p>
             Multi-parameter monitor for real-time tracking of patient vitals.
@@ -574,7 +584,7 @@
             "360° rotation capability",
             "Emergency battery backup",
           ],
-          modelPath: "images/OT light.glb",
+          modelPath: "images/OT_light.glb",
         },
         "ICU Bed": {
           title: "ICU Bed",
@@ -1111,5 +1121,13 @@
       const logos = container.innerHTML;
       container.innerHTML += logos; // only duplicate the logos, not the container
     </script>
+    <a
+      href="https://wa.me/+919810545292"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <img src="/Resources/wp_logo.png" alt="WhatsApp" />
+      <span class="wp-text">Get Quote</span>
+    </a>
   </body>
 </html>
